@@ -1,0 +1,91 @@
+/* ==========================================================================
+   #PAGE
+   ========================================================================== */
+
+/**
+ * Simple page-level setup.
+ *
+ * 1. Set the default `font-size` and `line-height` for the entire project,
+ *    sourced from our default variables. The `font-size` is calculated to exist
+ *    in ems, the `line-height` is calculated to exist unitlessly.
+ * 2. Force scrollbars to always be visible to prevent awkward ‘jumps’ when
+ *    navigating between pages that do/do not have enough content to produce
+ *    scrollbars naturally.
+ * 3. Ensure the page always fills at least the entire height of the viewport.
+ */
+
+html {
+  font-size: ($inuit-global-font-size / 20px) * 1em; /* [1] */
+  line-height: $inuit-global-line-height / $inuit-global-font-size; /* [1] */
+  overflow-y: scroll; /* [2] */
+  min-height: 100%; /* [3] */
+  background: #ffffff;
+}
+
+html, body {
+  font-size: 20px;
+  font-family: $body-font-family;
+}
+
+p {
+  font-size: 20px;
+  @include mq($until: tablet) {
+    @include inuit-font-size(16px);
+  }
+}
+
+p ~ h3 {
+  margin-top: $inuit-global-spacing-unit*2;
+}
+
+a {
+  color: $color-red;
+  text-decoration: none;
+}
+
+input, textarea {
+  width: 100%;
+  padding: 11px $inuit-global-spacing-unit-tiny;
+  margin-bottom: 24px;
+}
+
+button {
+  border-color: none;
+  border-style: none;
+  border-image: none;
+}
+
+input:not([type=checkbox]):not([type=radio]),
+textarea,
+select {
+  line-height: 1.5rem;
+  font-family: $body-font-family;
+}
+
+input,
+select,
+textarea {
+  border: solid 2px lighten($color-black, 85%);
+  border-radius: 2px;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+  outline: none;
+  border: solid 2px $color-red;
+}
+
+::-webkit-input-placeholder {
+  color: lighten($color-black, 85%);
+  font-weight: normal;
+}
+:-moz-placeholder {
+  color: lighten($color-black, 85%);
+}
+::-moz-placeholder {
+  color: lighten($color-black, 85%);
+}
+:-ms-input-placeholder {
+  color: lighten($color-black, 85%);
+}

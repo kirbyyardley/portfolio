@@ -1,0 +1,18 @@
+/* ==========================================================================
+   #LIST-INLINE
+   ========================================================================== */
+
+/**
+ * The list-inline object simply displays a list of items in one line.
+ */
+
+.o-list-inline {
+  margin-left: $inuit-global-spacing-unit;
+  list-style: none;
+}
+
+
+  .o-list-inline__item {
+    display: inline-block;
+    margin-bottom: $inuit-global-spacing-unit;
+  }

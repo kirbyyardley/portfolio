@@ -1,0 +1,90 @@
+---
+layout: case-study
+---
+<section id="about" class="c-section c-section__3 o-height--half o-center--vertical" style="position:relative;background-image:url('{{ "assets/img/styleguide--hero.png" | relative_url }}');">
+  <div class="o-overlay__image--black"></div>
+  <div class="o-wrapper" style="width:100%;">
+    <div class="o-layout">
+      <div class="o-layout__item u-1/1@desktop u-1/1@tablet">
+        <h1 style="margin-bottom: 48px;">Sundance.org UI&nbsp;Framework</h1>
+        <!-- <h3>The Goal</h3> -->
+        <p>I hit reset on all my Sketch files, refactored an entire CSS library, and created a web-based styleguide and library of front-end components.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="c-section" style="margin-top:100px">
+  <div class="o-wrapper" style="width:100%;">
+    <div class="o-layout">
+      <div class="o-layout__item u-1/1@desktop u-1/1@tablet">
+
+        <h3>Wearing All the Hats</h3>
+        <p>This is a three-part story of a project's journey from Sketch to Github, but it's also the story of one designer who grows from journeyman front-end developer to master. <em>Ok, fine. Front-end dev is a big stretch. My javascript has been found wanting.</em></p>
+
+
+        <p><a href="#design">I. Sketch Overhaul</a>- Sketch 41 introduced nested symbol overrides. To take advantage of this powerful new feature, I would need to overhaul much of my Sketch files. </p>
+        <p><a href="#code">II. CSS Methodology</a>- Research best practices and methologies for writing a new CSS library.</p>
+        <p><a href="#jekyll">III. Living Styleguide/UI Framework</a>- Build a web-based style guide and library of patterns, which includes design documentation and code snippets.</p>
+
+
+
+        <h3 id="design">I. Design Debt</h3>
+        <p>After doing some extensive reading, particularly a few very excellent pieces by <a target="_blank" href="https://medium.com/ux-power-tools/this-is-without-a-doubt-the-coolest-sketch-technique-youll-see-all-day-ddefa65ea959#.pevfkykqk">Jon Moore</a> and <a target="_blank" href="https://medium.com/@lloyd/sketch-symbols-best-practices-now-that-nested-overrides-are-a-thing-9b651d3fe1a4#.3jsbforui">Lloyd Humphries</a>, it became immediately clear just how much I was under-utilizing Sketch. Their application of deep-nested symbols enables designers to build nearly every element of a screen as a symbol, which would significantly reduce time spent assembling and updating designs. I started building many of the UI components from scratch and quickly realized I was staring down the barrel of a mountain of work. </p>
+
+        <p>Using UX Power Tools Toolbox as a starting point (and with a hefty amount of elbow grease) I recreated all of my design patterns and prototypes for Sundance.org. <em>I also took the opportunity to make some typographic tweaks that adhere entirely to a baseline grid. I'm very excited about it.</em></p>
+
+        <div class="o-layout">
+          <div class="o-layout__item u-1/3@desktop u-1/3@tablet u-1/2@mobile">
+            <img data-action="zoom" src="http://francoischalifour.com/files/lab/medium-image-zoom/images/2.jpg">
+          </div>
+          <div class="o-layout__item u-1/3@desktop u-1/3@tablet u-1/2@mobile">
+            <img data-action="zoom" src="http://francoischalifour.com/files/lab/medium-image-zoom/images/2.jpg">
+          </div>
+          <div class="o-layout__item u-1/3@desktop u-1/3@tablet u-1/1@mobile">
+            <img data-action="zoom" src="http://francoischalifour.com/files/lab/medium-image-zoom/images/2.jpg">
+          </div>
+        </div>
+
+        <h3 id="code">II. Refactoring with ITCSS/BEM</h3>
+        <p>CSS is only as clean and organized as its author allows it to be. In 2014 when we relaunched Sundance.org, it was my first experience writing CSS on such a large scale. My ignorance led me to making some very poor decisions early on, such as nesting selectors too heavily and not organizing our library in a way that allows for styles to be more widely reusable. My CSS bloated and too specific. </p>
+        <p>The ITCSS methodology is based on the idea of organizing CSS in an inverted triangle starting from more broad and far-reaching styles at the top of the hierarchy and building downward to increasingly specific elements. Here’s a quick breakdown. </p>
+        <ul class="o-list-bare">
+          <li>1. Settings (variables, font sizes, colors, configs)</li>
+          <li>2. Tools (preprocessor mixing and functions)</li>
+          <li>3. Generic (normalize, reset, box-sizing)</li>
+          <li>4. Elements (elements of the DOM, no classes)</li>
+          <li>5. Objects (non-cosmetic design patterns, wrappers, layouts)</li>
+          <li>6. Components (cosmetic design patterns)</li>
+          <li>7. Overrides (otherwise known as the shame folder)</li>
+        </ul>
+
+        <p><a target="_blank" href="http://www.creativebloq.com/web-design/manage-large-scale-web-projects-new-css-architecture-itcss-41514731">For those interested, Harry Roberts (who created ITCSS) provides a more in-depth explanation</a>.</p>
+
+        <p>I hadn't intended to employ a framework, but as luck would have it, Harry Roberts created InuitCSS. InuitCSS is a framework comprised of both ITCSS and BEM. A framework in its purest sense, InuitCSS comes only with the basic architecture of a CSS library. It contains nothing in the way of design. <em>Music to my ears!</em></p>
+
+        <h3 id="jekyll">III. A Living Styleguide</h3>
+
+        <p>Using Jekyll I created a static website and hosted it on Github pages. I built every pattern on Sundance.org within this new CSS framework. Now our team can access a living styleguide, complete with design documentation, live examples, and code snippets.</p>
+
+        <p>One of the biggest benefits of this approach is that it allowed me to write a new CSS library independent of our website's existing codebase. There was to be no confusion or crossover between me and the other developers until the entire library was rewritten. Only then would we begin integrating it with the existing codebase. This approach also circumvents that challenge of handing off design assets to developers. It also provided me more time and space to make slight adjustments to styles and experiment between my design files and code.</p>
+
+        <div class="o-layout">
+          <div class="o-layout__item u-1/3@desktop u-1/3@tablet u-1/2@mobile">
+            <img data-action="zoom" src="{{ "assets/img/styleguide-1.png" | relative_url }}">
+          </div>
+          <div class="o-layout__item u-1/3@desktop u-1/3@tablet u-1/2@mobile">
+            <img data-action="zoom" src="{{ "assets/img/styleguide-0.png" | relative_url }}">
+          </div>
+          <div class="o-layout__item u-1/3@desktop u-1/3@tablet u-1/1@mobile">
+            <img data-action="zoom" src="{{ "assets/img/styleguide-0.png" | relative_url }}">
+          </div>
+        </div>
+
+        <h3>Epilogue</h3>
+        <p>This project pushed me in some of the technical areas where I needed to grow. I now have a very firm grasp on creating and maintaining a UI framework from start to finish. I'm confident that this knowledge will be tremendously helpful on projects in the future.</p>
+
+      </div>
+    </div>
+  </div>
+</section>

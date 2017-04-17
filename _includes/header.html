@@ -1,0 +1,41 @@
+<!-- <div>
+  {% for my_page in site.pages %}
+    {% if my_page.title %}
+    <a class="page-link" href="{{ my_page.url | relative_url }}">{{ my_page.title | escape }}</a>
+    {% endif %}
+  {% endfor %}
+</div> -->
+
+<nav class="c-nav">
+  <div class="c-menu">
+    <div class="c-eye__container">
+      <div class="c-eye"></div>
+    </div>
+  </div>
+  {% if page.url != "/" %}
+  <div class="c-nav__back">
+    <a href="{{ site.url }}/">return</a>
+  </div>
+  {% endif %}
+</nav>
+<div class="c-nav__menu-container">
+  <div class="c-nav__overlay"></div>
+  <div class="c-nav__list-container">
+    <ul class="o-list-bare">
+      <li><a class="c-nav__item" href="/">Home</a></li>
+      <li><a class="c-nav__item" href="{{ base }}#work">Work</a>
+        <ul class="o-list-bare">
+          <li><a href="/sundance-styleguide">Sundance.org UI Framework</a></li>
+          <li><a href="/sundance-history">Sundance.org Digital Archive</a></li>
+          <li><a href="/sundance-photo">Sundance.org Photo</a></li>
+        </ul>
+      </li>
+      <li><a class="c-nav__item" href="#about">About</a></li>
+      <li><a class="c-nav__item" href="#contact">Contact</a></li>
+    </ul>
+    <ul class="o-list-inline c-sosh-links">
+      <li class="o-list-inline__item"><a href="https://twitter.com/kirby_yardley" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+      <li class="o-list-inline__item"><a href="https://www.linkedin.com/in/kirbyyardley" target="_blank"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
+    </ul>
+  </div>
+</div>
