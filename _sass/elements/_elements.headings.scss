@@ -32,7 +32,7 @@ h1 {
 h2 {
   @include inuit-font-size($inuit-font-size-h2);
   @include mq($until: tablet) {
-    @include inuit-font-size(40px);
+    @include inuit-font-size(36px);
   }
 }
 

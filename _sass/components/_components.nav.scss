@@ -59,6 +59,11 @@ $nav-height: 80px;
 //   border-bottom: 30px solid rgba(0,0,0,0.5);
   height: $nav-height;
   width: $nav-height;
+  @include mq($until: tablet) {
+    width: 60px;
+    height: 60px;
+
+  }
 }
 
 .c-eye {
@@ -70,6 +75,11 @@ $nav-height: 80px;
   top: 50%;
   left: 50%;
   transform: rotate(45deg) translate(-67%, -1%);
+  @include mq($until: tablet) {
+    width: 25px;
+    height: 25px;
+
+  }
 }
 
 .c-eye:before {
@@ -84,6 +94,10 @@ $nav-height: 80px;
   left: 10px;
   top: 10px;
   transition: all 0.5s ease;
+  @include mq($until: tablet) {
+    left: 5px;
+    top: 5px;
+  }
 }
 
 .c-eye__container:hover {
@@ -93,6 +107,10 @@ $nav-height: 80px;
     background: $color-white;
     left: 8px;
     top: 8px;
+    @include mq($until: tablet) {
+      left: 3px;
+      top: 3px;
+    }
   }
 }
 .c-nav__menu-container.is-open .c-nav__list-container {
@@ -126,6 +144,7 @@ $nav-height: 80px;
         margin-right: 0;
       }
       ul {
+        margin: 12px 0;
         padding-left: 24px;
         font-size: 16px;
       }
@@ -151,6 +170,7 @@ $nav-height: 80px;
 }
 
 .c-nav__menu-container.is-open .c-nav__overlay {
+  cursor: pointer;
   display: block;
   opacity: 1;
 }

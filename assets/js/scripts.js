@@ -1,9 +1,9 @@
 $( document ).ready(function() {
 
 /* Sections to match viewport height to 50% */
-  $('.o-height--half').css('height', window.innerHeight*.70+'px');
+  $('.o-height--half').css('height', window.innerHeight*.50+'px');
   $(window).resize(function() {
-    $('.o-height--half').css('height', window.innerHeight*.70+'px');
+    $('.o-height--half').css('height', window.innerHeight*.50+'px');
   });
 
   /* Sections to match viewport height to 50% */
@@ -14,7 +14,7 @@ $( document ).ready(function() {
 
 
 /* Navigation */
-  $('.c-menu').on('click', function(){
+  $('.c-menu, .c-nav__overlay, .c-nav__item').on('click', function(){
     if ($('.c-nav__menu-container').hasClass('is-open')) {
       $('.c-menu').removeClass('is-active');
     	$('.c-nav__menu-container').removeClass('is-open');
@@ -26,8 +26,9 @@ $( document ).ready(function() {
     }
   });
 
-    // to top right away
+  // to top right away
   if ( window.location.hash ) scroll(0,0);
+
   // void some browsers issue
   setTimeout( function() { scroll(0,0); }, 1);
 
@@ -35,10 +36,10 @@ $( document ).ready(function() {
 
       // your current click function
       $('.c-nav__item').on('click', function(e) {
-          e.preventDefault();
+          // e.preventDefault();
           $('html, body').animate({
               scrollTop: $($(this).attr('href')).offset().top + 'px'
-          }, 1000, 'swing');
+          }, 500, 'swing');
           $('.c-menu').removeClass('is-active');
         	$('.c-nav__menu-container').removeClass('is-open');
           $('body, html').removeClass('loading');
@@ -50,7 +51,7 @@ $( document ).ready(function() {
           // smooth scroll to the anchor id
           $('html, body').animate({
               scrollTop: $(window.location.hash).offset().top + 'px'
-          }, 1000, 'swing');
+          }, 500, 'swing');
       }
 
   });
