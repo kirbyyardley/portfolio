@@ -19,6 +19,9 @@ $nav-height: 80px;
     display: block;
     padding: 24px;
     color: $color-white;
+    @include mq($until: tablet) {
+      padding: 14px;
+    }
     &:before {
       position: relative;
       content: '\f177';
