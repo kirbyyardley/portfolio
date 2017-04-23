@@ -20,108 +20,113 @@ layout: case-study
     <div class="o-layout">
       <div class="o-layout__item u-1/1@desktop u-1/1@tablet">
 
+        <img style="margin-bottom: 24px;" src="{{ "assets/img/history-00.jpg" | relative_url }}" alt="">
+
         <p style="color: #999;"><em>At the time that I am writing this, the project is in the development stage. I'll be sure to update this post once we go live!</em></p>
 
-        <p>The Digital Archive is a database containing records of every project and artist that Sundance Institute has supported, either through our many artist programs or by showing the films at festivals. In addition to migrating this database from an old, archaic filemaker database, we took this opportunity to make significant design updates to its front-end. We would be making severe changes to the layout and functionality of the database itself, as well as determining how best to integrate it with the rest of Sundance.org through related content (blogs, photos, video).
+        <p>The Digital Archive is a database containing records of every project and artist that Sundance Institute has supported, either through our many artist programs or by showing the films at festivals. In addition to migrating this database from an old, archaic Filemaker database, we took this opportunity to make significant design updates to its front-end. We would be making severe changes to the layout and functionality of the database itself, as well as determining how best to integrate it with the rest of Sundance.org through related content (blogs, photos, video).</p>
 
-        <p>This was also the opportunity to introduce the first iteration of our long-sought "Watch" feature. Users could see where the films were available to watch online.</p>
-
-        <div class="o-layout">
-          <div class="o-layout__item u-1/3@desktop u-1/3@tablet u-1/2@mobile">
-            <img data-action="zoom" src="{{ "assets/img/history-0.png" | relative_url }}">
-          </div>
-          <div class="o-layout__item u-1/3@desktop u-1/3@tablet u-1/2@mobile">
-            <img data-action="zoom" src="{{ "assets/img/history-1.png" | relative_url }}">
-          </div>
-          <div class="o-layout__item u-1/3@desktop u-1/3@tablet u-1/1@mobile">
-            <img data-action="zoom" src="{{ "assets/img/history-2.png" | relative_url }}">
-          </div>
-        </div>
+        <p>This was also the opportunity to integrate a Watch Now feature, which would allow users to see where films were available to watch online.</p>
 
         <h3>User Interviews</h3>
-        <p>We interviewed a diverse range of users who had been using the old database and identified three distinct user personas, each with it’s own specific needs and goals.</p>
+        <p>We started by interviewing a diverse range of users who had been using the old database and identified three distinct user personas, each with it’s own specific needs and goals. We came away with three key user personas.</p>
 
         <div class="o-layout">
-          <div class="o-layout__item u-1/3@desktop u-1/3@tablet u-1/2@mobile">
+          <div class="o-layout__item u-1/3@desktop u-1/3@tablet u-1/1">
             <h4>Audience</h4>
             <p><strong>Needs</strong><br>Audience-oriented information, release dates, ways to watch, what films to watch</p>
             <p><strong>Goal</strong><br>To learn more about films they are interested in viewing.</p>
           </div>
-          <div class="o-layout__item u-1/3@desktop u-1/3@tablet u-1/2@mobile">
+          <div class="o-layout__item u-1/3@desktop u-1/3@tablet u-1/1">
             <h4>Reporter</h4>
             <p><strong>Needs</strong><br>Highly specific info/stats relating to films, artists.</p>
             <p><strong>Goal</strong><br>To publish content related to specific films in support of the artist and their work.</p>
           </div>
-          <div class="o-layout__item u-1/3@desktop u-1/3@tablet u-1/1@mobile">
+          <div class="o-layout__item u-1/3@desktop u-1/3@tablet u-1/1">
             <h4>Donor</h4>
             <p><strong>Needs</strong><br>Information on specific projects, artists that were institute-supported.</p>
             <p><strong>Goal</strong><br>To know that their support for Sundance Institute is having an impact.</p>
           </div>
         </div>
 
-
-
-
-
-
-
+        <p>These interviews highlighted that the advanced search tool from the old database was extremely crucial for them. We elevated this as a key requirement for us to focus on in a forthcoming project that will look to create a more unified Sundance.org search.</p>
 
         <h3>Database Tour</h3>
-        <p>In order to wrap our heads around the information we were designing for, we took a deep dive into the database where all of the info lived. This would help us paint an accurate picture of how these sets of data are related to each other, which would also help us determine, hierarchtically, how best to allow users to navigate into and between pages within the database.</p>
+        <p>Next we took a deep dive into the database where all of the info lived. This would help us paint an accurate picture of how these sets of data are related to each other, which would also help us determine, hierarchtically, how best to allow users to navigate our database.</p>
 
         <div class="o-layout o-layout--center">
-          <div class="o-layout__item u-1/2@desktop u-1/2@tablet u-1/1">
+          <div class="o-layout__item u-1/2@desktop u-1/2">
             <img data-action="zoom" src="{{ "assets/img/history-3.png" | relative_url }}">
           </div>
         </div>
 
-        <h3>Identifying the Place Where We Could Make the Most Impact: Film Pages</h3>
-        <p>Our analytics data pointed to film pages being the place where users were exiting the most. This seemed to be the place where people had reached their goal. <em>They found the film they were looking for and were either satisfied with the information or found it wanting.</em> Film pages were also getting the majority of our traffic Our biggest opportunity to further engagement would be from this screen.</p>
-        <p>We also had to deal with the issue that many films had a unique page based on which event it was associated with. (Example: Before <em>Reservoir Dogs</em> screened at the 1992 Sundance Film Festival, it was part of the 1991 Directors Lab). To solve this problem, we would need to consolidate this information onto a single page, but continue to contextual how the project evolved over time. We introduced tabs specific to each iteration of the film. </p>
+        <p>A big issue surfaced as we recognized that many films had multiple unique database records as a result of having seen multiple iterations of support from Sundance. (Example: <em>Reservoir Dogs</em> was supported at the 1991 Directors Lab, went on to screen at the 1992 Sundance Film Festival and 2011 Festival in London). To solve this we introduced <strong>tabs</strong> as a design pattern. This allowed us to present each unique iteration of a project on a single page, as well as highlight the timeline of support that a project received.</p>
 
         <div class="o-layout o-layout--center">
-          <div class="o-layout__item u-1/2@desktop u-1/2@tablet u-1/1">
+          <div class="o-layout__item u-1/2@desktop u-1/2">
             <img data-action="zoom" src="{{ "assets/img/history-8.png" | relative_url }}">
           </div>
         </div>
 
-        <h3>Comparative Assessment</h3>
-        <p>By exploring the work that others have done, it would help us to identify design patterns that may work for us and well as avoid any potential pitfalls. We also wanted to expand our view beyond the world of film and entertainment by assessing a diverse range of database or historical products. </p>
+        <h3>Biggest Opportunity for Impact: Film Pages</h3>
+        <p>Our analytics pointed to film pages, second only to the landing page of the archive, as being the place where users were entering (via external links or organic search) and exiting the most. This was the biggest opportuntiy to provide users with the information they were seeking. Our Watch Now feature would provide audiences with the ability to watch films that are available. Through related content we would be providing reporters and donors the entirety of project's story. </p>
 
-        <p>We chose to review IMDB, The King Center, Festival de Cannes Archive, and Google's Cultural Institute. </p>
+        <h3>Comparative Assessment</h3>
+        <p>We selected IMDB, The King Center, Festival de Cannes Archive, and Google's Cultural Institute for our comparative assessment. We wanted to explore a diverse set of database products to help identify strengths, weaknesses and design patterns that might prove useful for our own database.</p>
 
         <div class="o-layout">
-          <div style="margin-bottom: 30px;" class="o-layout__item u-1/4@desktop u-1/4@tablet u-1/2@mobile">
+          <div style="margin-bottom: 30px;" class="o-layout__item u-1/4@desktop u-1/4@tablet u-1/2">
             <img data-action="zoom" src="{{ "assets/img/history-5.jpg" | relative_url }}">
           </div>
-          <div style="margin-bottom: 30px;" class="o-layout__item u-1/4@desktop u-1/4@tablet u-1/2@mobile">
+          <div style="margin-bottom: 30px;" class="o-layout__item u-1/4@desktop u-1/4@tablet u-1/2">
             <img data-action="zoom" src="{{ "assets/img/history-4.jpg" | relative_url }}">
           </div>
-          <div class="o-layout__item u-1/4@desktop u-1/4@tablet u-1/2@mobile">
+          <div class="o-layout__item u-1/4@desktop u-1/4@tablet u-1/2">
             <img data-action="zoom" src="{{ "assets/img/history-6.jpg" | relative_url }}">
           </div>
-          <div class="o-layout__item u-1/4@desktop u-1/4@tablet u-1/2@mobile">
+          <div class="o-layout__item u-1/4@desktop u-1/4@tablet u-1/2">
             <img data-action="zoom" src="{{ "assets/img/history-7.jpg" | relative_url }}">
           </div>
         </div>
 
         <p style="margin-top: 30px;">A few key takeaways:</p>
         <ul>
-          <li>A carefully crafted, story-driven landing page layout best serves featured/curated historical content.</li>
+          <li>A carefully crafted, story-driven landing page best serves featured/curated historical content.</li>
           <li>Caution: Avoid visual oversaturization. Create clear pathways into content.</li>
           <li>Connect people with something historical.</li>
-          <li>Hierarchy matters. Elevate the information users are seeking most. <em>I'm very interested to see how our decisions plays out in user tests</em>.</li>
+          <li>Simplification is something many databases struggle with.</li>
+          <li>Hierarchy matters and determining this within the context of a database of information is not always clear.</li>
         </ul>
 
-        <h3>Prototypes</h3>
+        <h3>Prototype Screens</h3>
 
+        <div class="o-layout">
+          <div style="margin-bottom: 30px;" class="o-layout__item u-1/3@desktop u-1/3@tablet u-1/2">
+            <img data-action="zoom" src="{{ "assets/img/history-12.jpg" | relative_url }}">
+          </div>
+          <div style="margin-bottom: 30px;" class="o-layout__item u-1/3@desktop u-1/3@tablet u-1/2">
+            <img data-action="zoom" src="{{ "assets/img/history-11.jpg" | relative_url }}">
+          </div>
+          <div style="margin-bottom: 30px;" class="o-layout__item u-1/3@desktop u-1/3@tablet u-1/2">
+            <img data-action="zoom" src="{{ "assets/img/history-10.jpg" | relative_url }}">
+          </div>
+          <div style="margin-bottom: 30px;" class="o-layout__item u-1/3@desktop u-1/3@tablet u-1/2">
+            <img data-action="zoom" src="{{ "assets/img/history-14.jpg" | relative_url }}">
+          </div>
+          <div style="margin-bottom: 30px;" class="o-layout__item u-1/3@desktop u-1/3@tablet u-1/2">
+            <img data-action="zoom" src="{{ "assets/img/history-9.jpg" | relative_url }}">
+          </div>
+          <div style="margin-bottom: 30px;" class="o-layout__item u-1/3@desktop u-1/3@tablet u-1/2">
+            <img data-action="zoom" src="{{ "assets/img/history-13.jpg" | relative_url }}">
+          </div>
+        </div>
 
-        <h3>Moving Forward & Iteration</h3>
-        <p>The Digital Archive has been long awaiting its return to Sundance.org, so our goal is to launch it as an MVP as soon as possible. We've chosen to focus primarily on usability testing as well as determining how this will impact the site's search functionality. Once we are live, we'll be utilizing session recording software and A/B testing in order to begin validation.</p>
+        <h3>Testing & Iteration</h3>
+        <p>The Digital Archive has been long awaiting its return to Sundance.org, so our goal is to launch it as an MVP as soon as possible. We've chosen to focus primarily on usability testing as well as determining how this will impact the site's search functionality. Once we are live, we'll be utilizing session recording software and A/B testing in order to begin iterating.</p>
 
         <p>Here are the two key hypotheses we'll be testing:</p>
         <ul>
-          <li>Our audience is willing to use Sundance.org as a way of finding films they want to watch online. The "watch" feature will get put to use.</li>
+          <li>Our audience is willing to use Sundance.org as a way of finding films they want to watch online. The "watch" feature will get put to use and we'll see visitors return to find films to watch.</li>
           <li>Users will actively engage with the related content displaying alongside database information. This will further Sundance's ability to tell its story.</li>
         </ul>
 
