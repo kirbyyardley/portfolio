@@ -8,7 +8,7 @@ layout: case-study
       <div class="o-layout__item u-2/3@desktop u-1/1@tablet">
         <h1 style="margin-bottom: 48px;">Sundance.org Digital&nbsp;Archive</h1>
         <!-- <h3>The Goal</h3> -->
-        <p>A historical database containing records of every project and artist that Sundance Institute has supported. </p>
+        <p>The digital archive is a database that allows people to connect with projects and artists that Sundance Institute has supported going all the way back to 1980.</p>
         <p><em>Role: UX Design, UI Design, Front-End Developement</em></p>
       </div>
     </div>
@@ -20,43 +20,17 @@ layout: case-study
     <div class="o-layout">
       <div class="o-layout__item u-1/1@desktop u-1/1@tablet">
 
-        <img style="margin-bottom: 24px;" src="{{ "assets/img/history-00.jpg" | relative_url }}" alt="">
+        <img  data-action="zoom" style="margin-bottom: 24px;" src="{{ "assets/img/history-00.jpg" | relative_url }}" alt="">
 
-        <p style="color: #999;"><em>At the time that I am writing this, the project is in the development stage. I'll be sure to update this post once we go live!</em></p>
-
-        <h3>Goals</h3>
-        <ul>
-          <li>Create a database more closely aligned with user needs and goals</li>
-          <li>Integrate the database with Sundance.org, through related content and curation</li>
-          <li>Introduce the first iteration of Sundance.org's "Watch Now" feature</li>
-          <li>Help tell Sundance.org's story</li>
-        </ul>
+        <p>Our aim with this project, in addition to giving this old database a much needed facelift, was to align it more closely with the needs of our users. By integrating the database with the rest of Sundance.org, as well as introducing a "Watch Now" feature, this would help Sundance Institute to tell its decades-long story of supporting artists.</p>
 
         <h3>User Interviews</h3>
-        <p>We identified a diverse range of users that had been using the old database for various purposes for our interviews. Three distinct personas came out of those interviews.</p>
+        <p>We interviewed a diverse set of users who had been using the old version of our database. From these interviews, we were able to identify three key personas.</p>
 
-        <div class="o-layout">
-          <div class="o-layout__item u-1/3@desktop u-1/3@tablet u-1/1">
-            <h4>Audience</h4>
-            <p><strong>Needs</strong><br>Basic filmgoer information, release dates, ways to watch, what films to watch</p>
-            <p><strong>Goal</strong><br>To learn more about films they are interested in viewing.</p>
-          </div>
-          <div class="o-layout__item u-1/3@desktop u-1/3@tablet u-1/1">
-            <h4>Reporter</h4>
-            <p><strong>Needs</strong><br>Highly specific info/stats relating to films, artists.</p>
-            <p><strong>Goal</strong><br>To publish content related to specific films in support of the artist and their work.</p>
-          </div>
-          <div class="o-layout__item u-1/3@desktop u-1/3@tablet u-1/1">
-            <h4>Donor</h4>
-            <p><strong>Needs</strong><br>Information on specific projects, artists that were institute-supported.</p>
-            <p><strong>Goal</strong><br>To know that their support for Sundance Institute is having an impact.</p>
-          </div>
-        </div>
-
-        <p>These interviews highlighted that the advanced search tool from the old database was extremely crucial for them. We elevated this as a key requirement for us to focus on in a forthcoming project that will look to create a more unified Sundance.org search.</p>
+        <img data-action="zoom" src="{{ "assets/img/history-personas.png" | relative_url }}">
 
         <h3>Database Tour</h3>
-        <p>Next, we took a deep dive into the database where all of the info lived. This would help us paint an accurate picture of how these sets of data are related to each other, which would also help us determine, hierarchically, how best to allow users to navigate our database.</p>
+        <p>A deep dive into the database where all of these records lived showed us a clear hierarchy and how these records related to each other.</p>
 
         <div class="o-layout o-layout--center">
           <div class="o-layout__item u-1/2@desktop u-1/2">
@@ -64,16 +38,17 @@ layout: case-study
           </div>
         </div>
 
-        <p>A big issue surfaced as we recognized that many films had multiple unique database records as a result of having seen multiple iterations of support from Sundance. (Example: <em>Reservoir Dogs</em> was supported at the 1991 Directors Lab, went on to screen at the 1992 Sundance Film Festival and 2011 Festival in London). To solve this we introduced <strong>tabs</strong> as a design pattern. This allowed us to present each unique iteration of a project on a single page, as well as highlight the timeline of support that a project received.</p>
+        <!-- <p>A big issue surfaced as we recognized that many films had multiple unique database records as a result of having seen multiple iterations of support from Sundance. (Example: <em>Reservoir Dogs</em> was supported at the 1991 Directors Lab, went on to screen at the 1992 Sundance Film Festival and 2011 Festival in London). To solve this we introduced <strong>tabs</strong> as a design pattern. This allowed us to present each unique iteration of a project on a single page, as well as highlight the timeline of support that a project received.</p>-->
+
+        <p>Projects that had seen multiple iterations of support from the institute created a very interesting challenge. Each iteration of a project was unique, and likely didn't have the same description or credits. An actor that worked on a film while at the labs was not likely to appear in the final production of that film that went on to screen at the festival.</p>
+
+        <p>We used tabs as a design pattern to help solve this problem. Tabs help to communicate the full timeline of a project as it relates to Sundance, but still allows for the unique information to remain intact.</p>
 
         <div class="o-layout o-layout--center">
           <div class="o-layout__item u-1/2@desktop u-1/2">
             <img data-action="zoom" src="{{ "assets/img/history-8.png" | relative_url }}">
           </div>
         </div>
-
-        <h3>Biggest Opportunity for Impact: Film Pages</h3>
-        <p>Our analytics pointed to film pages, second only to the landing page of the archive, as being the place where users were entering (via external links or organic search) and exiting the most. This was the biggest opportunity to provide users with the information they were seeking. Our Watch Now features would provide audiences with the ability to watch films that are available. Through related content, we would be providing reporters and donors the entirety of project's story.</p>
 
         <h3>Comparative Assessment</h3>
         <p>We selected IMDB, The King Center, Festival de Cannes Archive, and Google's Cultural Institute for our comparative assessment. We wanted to explore a diverse set of database products to help identify strengths, weaknesses and design patterns that might prove useful for our own database.</p>
@@ -101,6 +76,9 @@ layout: case-study
           <li>Simplification is something many databases struggle with.</li>
           <li>Hierarchy matters and determining this within the context of a database of information is not always clear.</li>
         </ul>
+
+        <h3>A Robust, Curated Landing Page</h3>
+        <p>From the digital archive's landing page, users now have the ability to search, browse by program or year, or engage with the featured content that our archives team keeps updated. </p>
 
         <h3>Prototype Screens</h3>
 

@@ -42,7 +42,7 @@ li {
   margin-bottom: 24px;
 }
 
-p ~ h3 {
+p ~ h3, ul ~ h3 {
   margin-top: $inuit-global-spacing-unit*2;
 }
 
