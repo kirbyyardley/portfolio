@@ -7,8 +7,6 @@ layout: case-study
     <div class="o-layout">
       <div class="o-layout__item u-1/1@desktop u-1/1@tablet">
         <h1 style="margin-bottom: 48px;">Sundance.org UI&nbsp;Framework Overhaul</h1>
-        <!-- <h3>The Goal</h3> -->
-        <p>Sketch Overhaul + CSS Refactor + Web Styleguide/Components Library</p>
       </div>
     </div>
   </div>
@@ -23,13 +21,12 @@ layout: case-study
         <p><a href="#code">II. CSS Methodology</a></p>
         <p><a href="#jekyll">III. Abstract Refactoring</a></p>
 
-
-
         <h3 id="design">I. Sketch Overhaul (Design Debt)</h3>
-        <p>Sketch 41 introduced nested symbol overrides. This powerful change would enable designers to make symbols out of smaller symbols and have the ability to change content within them. This was huge and was the obvious starting point for this project.</p>
-        <p><a target="_blank" href="https://medium.com/ux-power-tools/this-is-without-a-doubt-the-coolest-sketch-technique-youll-see-all-day-ddefa65ea959#.pevfkykqk">Jon Moore</a> and <a target="_blank" href="https://medium.com/@lloyd/sketch-symbols-best-practices-now-that-nested-overrides-are-a-thing-9b651d3fe1a4#.3jsbforui">Lloyd Humphries</a>, do a great job of highlighting how best to take advantage of these. Their application of deep-nested symbols enables designers to build nearly every element of a screen as a symbol, with overrides allowing for every symbol to have unique content. This approach to crafting designs is extremely efficient.</p>
+        <p>Sketch 41 introduced nested symbol overrides. This powerful change would enable designers to make symbols out of smaller symbols and have the ability to change content within them using overrides. Utilizing this new feature and rethinking my approach to building interfaces within Sketch would enable me to create and maintain designs more efficiently.</p>
 
-        <p>Rather than rebuilding all of my existing components as symbols, I opted to use UX Power Tools Toolbox as my starting point. After some intense modifications to their entire document, I recreated all of the patterns and designs for Sundance.org. I ended up with hundreds of new symbols. And symbols nested in symbols nested in symbols. These screenshots give you a sense that what is happening is chaotic, but there is real ingenuity at work here. </p>
+        <p>Rather than rebuilding all of my existing components as symbols, I opted to use UX Power Tools Toolbox as my starting point. After some intense modifications to their entire document, I recreated all of the patterns and designs for Sundance.org. I ended up with hundreds of new symbols. And symbols nested in symbols nested in symbols. The below screenshots of my symbols page give you a sense that what is happening is chaotic, but there is real ingenuity at work here. </p>
+
+        <p><a target="_blank" href="https://medium.com/ux-power-tools/this-is-without-a-doubt-the-coolest-sketch-technique-youll-see-all-day-ddefa65ea959#.pevfkykqk">Jon Moore</a> and <a target="_blank" href="https://medium.com/@lloyd/sketch-symbols-best-practices-now-that-nested-overrides-are-a-thing-9b651d3fe1a4#.3jsbforui">Lloyd Humphries</a>, do a great job of highlighting how best to approach utilizing deep nested symbols in building components within Sketch. </p>
 
         <div class="o-layout">
           <div class="o-layout__item u-1/3@desktop u-1/3">
@@ -43,10 +40,12 @@ layout: case-study
           </div>
         </div>
 
-        <p>In addition to this dramatic change in formatting, I also took advantage of this opportunity to make a few tweaks, namely adding a baseline grid to our typographic ecosystem. </p>
+        <p>In addition to this dramatic change in how I'm crafting my Sketch files, I also took advantage of this opportunity to make a few tweaks, namely adding a baseline grid to our typographic ecosystem. </p>
+
+        <p>With this wheel in motion, our team began exploring how best to approach our refactor. </p>
 
         <h3 id="code">II. Refactoring with ITCSS/BEM</h3>
-        <p>CSS is only as clean and organized as its author dictates. My first attempt at writing CSS on a very large scale was in 2014 when we relaunched Sundance.org. I made some poor decisions along the way by organizing our CSS in a way that doesn't allow for styles to be shared more widely across the site and selectors that are way too specific. </p>
+        <p>CSS is only as clean and organized as its author dictates. My first attempt at writing CSS on a very large scale was in 2014 when we relaunched Sundance.org. At that time I made some poor decisions along the way by organizing our CSS in a way that doesn't allow for styles to be shared more widely across the entire site and selectors that are way too specific.</p>
         <p>We spent some time researching ways to refactor our CSS and had many conversations with our devs. Ultimately we narrowed things down to ITCSS as a methodology and BEM as our naming convention.</p>
         <p>The ITCSS methodology is based on the idea of organizing CSS in an inverted triangle starting from most broad and far-reaching styles at the top of the hierarchy and building downward to increasingly specific elements. Here’s a quick breakdown:</p>
         <ul class="o-list-bare">
@@ -61,15 +60,15 @@ layout: case-study
 
         <p><a target="_blank" href="http://www.creativebloq.com/web-design/manage-large-scale-web-projects-new-css-architecture-itcss-41514731">For those interested, Harry Roberts (the creator) provides a fantastic, in-depth explanation</a>.</p>
 
-        <p>I had initially wanted to avoid the use of a framework, but as luck would have it, Harry Roberts created InuitCSS. InuitCSS is a framework comprised of both ITCSS and BEM. A framework in its purest sense, InuitCSS comes only with the basic architecture of a CSS library. It contains nothing in the way of design. <em>Music to my ears!</em></p>
+        <p>I had initially wanted to avoid the use of a framework since they often bring with it a ton of unwanted styles that must first be untangled. Thankfully, as luck would have it, Harry Roberts created InuitCSS. InuitCSS is a framework comprised of both ITCSS and BEM. A framework in its purest sense, InuitCSS comes only with the basic architecture of a CSS library. It contains nothing in the way of design. <em>Music to my ears!</em></p>
 
-        <p>This worked extremely well. InuitCSS has so much utility out of the box that you can assemble entire patterns without having to write very many additional custom classes.</p>
+        <p>This worked extremely well. InuitCSS has so much utility out of the box that you can assemble entire patterns without having to write very many additional custom classes. The file size of the refactored CSS came in at less than 1/3rd of what it was previously.</p>
 
         <h3 id="jekyll">III. Abstract Refactoring</h3>
 
-        <p>One of the biggest risks when performing a refactor of this scale is that you are making sweeping changes to the codebase. As this is happening, coordinating work between the team becomes very challenging and you're now having to toil with two separate libraries of CSS at once. Our team really wanted to avoid this nightmare. I opted to write an entire abstract CSS library first.</p>
+        <p>One of the biggest risks when performing a refactor of this scale is that you are making sweeping changes to the codebase. As this is happening, coordinating work between the team becomes very challenging and you're now having to toil with two separate libraries of CSS at once. Our team really wanted to avoid this nightmare. We opted to perform this refactor beforehand, creating all of the components in abstract form before touching the production codebase.</p>
 
-        <p>I spun up a Jekyll instance, installed Inuit and started assembling our new CSS library on a static front-end by building out every component on Sundance.org. In order for our team to be able to review and contribute, I shared the repo and hosted it as a live web page on Github Pages (<a target="_blank" href="https://github.com/kirbyyardley/Sundance-Styleguide">repo</a>, <a target="_blank" href="https://kirbyyardley.github.io/Sundance-Styleguide/cards/">live version</a>). Since we were building this static set of front-end components anyway, it made perfect sense for us to turn this into our living style guide. Complete with design documentation, live examples and code snippets, this is now a great resource for our developers for future projects.</p>
+        <p>To do this, I spun up a Jekyll instance, installed Inuit and started assembling our new CSS library on a static front-end by building out every component on Sundance.org. In order for our team to be able to review and contribute, I shared the repo and hosted it as a live web page on Github Pages (<a target="_blank" href="https://github.com/kirbyyardley/Sundance-Styleguide">repo</a>, <a target="_blank" href="https://kirbyyardley.github.io/Sundance-Styleguide/cards/">live version</a>). Since we were building this static set of front-end components anyway, it made perfect sense for us to turn this into our living style guide. Complete with design documentation, live examples and code snippets, this is now a great resource for our developers for future projects.</p>
 
         <div class="o-layout">
           <div class="o-layout__item u-1/3@desktop u-1/3@tablet u-1/2@mobile">
