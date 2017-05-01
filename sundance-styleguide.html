@@ -8,7 +8,7 @@ layout: case-study
       <div class="o-layout__item u-1/1@desktop u-1/1@tablet">
         <h1 style="margin-bottom: 48px;">Sundance.org UI&nbsp;Framework Overhaul</h1>
         <!-- <h3>The Goal</h3> -->
-        <p>This is a three-part story of a style guide's journey from Sketch to Github. Here I will highlight some of what I learned along the way. </p>
+        <p>Sketch Overhaul + CSS Refactor + Web Styleguide/Components Library</p>
       </div>
     </div>
   </div>
@@ -26,10 +26,10 @@ layout: case-study
 
 
         <h3 id="design">I. Sketch Overhaul (Design Debt)</h3>
-        <p>Sketch 41 introduced nested symbol overrides. This powerful change would enable designers to make components that could contain varying components. </p>
-        <p><a target="_blank" href="https://medium.com/ux-power-tools/this-is-without-a-doubt-the-coolest-sketch-technique-youll-see-all-day-ddefa65ea959#.pevfkykqk">Jon Moore</a> and <a target="_blank" href="https://medium.com/@lloyd/sketch-symbols-best-practices-now-that-nested-overrides-are-a-thing-9b651d3fe1a4#.3jsbforui">Lloyd Humphries</a>, do a great job of highlighting how best to take advantage of these. Their application of deep-nested symbols enables designers to build nearly every element of a screen as a symbol, while using overrides to fill in the content. This approach to crafting design documents is extremely efficient and allows for every screen to be built almost entirely of symbols. </p>
+        <p>Sketch 41 introduced nested symbol overrides. This powerful change would enable designers to make symbols out of smaller symbols and have the ability to change content within them. This was huge and was the obvious starting point for this project.</p>
+        <p><a target="_blank" href="https://medium.com/ux-power-tools/this-is-without-a-doubt-the-coolest-sketch-technique-youll-see-all-day-ddefa65ea959#.pevfkykqk">Jon Moore</a> and <a target="_blank" href="https://medium.com/@lloyd/sketch-symbols-best-practices-now-that-nested-overrides-are-a-thing-9b651d3fe1a4#.3jsbforui">Lloyd Humphries</a>, do a great job of highlighting how best to take advantage of these. Their application of deep-nested symbols enables designers to build nearly every element of a screen as a symbol, with overrides allowing for every symbol to have unique content. This approach to crafting designs is extremely efficient.</p>
 
-        <p>Rather than starting from scratch and rebuilding all of my components as symbols, I opted to use UX Power Tools Toolbox as my starting point. After some intense modifications to their entire document, I recreated all of the patterns and designs for Sundance.org. I ended up with hundreds of new symbols. Many of which are nested inside of other symbols. These screenshots may look chaotic, but there is a lot going on within this madness. Symbols on symbols on symbols on symbols.</p>
+        <p>Rather than rebuilding all of my existing components as symbols, I opted to use UX Power Tools Toolbox as my starting point. After some intense modifications to their entire document, I recreated all of the patterns and designs for Sundance.org. I ended up with hundreds of new symbols. And symbols nested in symbols nested in symbols. These screenshots give you a sense that what is happening is chaotic, but there is real ingenuity at work here. </p>
 
         <div class="o-layout">
           <div class="o-layout__item u-1/3@desktop u-1/3">
@@ -46,8 +46,8 @@ layout: case-study
         <p>In addition to this dramatic change in formatting, I also took advantage of this opportunity to make a few tweaks, namely adding a baseline grid to our typographic ecosystem. </p>
 
         <h3 id="code">II. Refactoring with ITCSS/BEM</h3>
-        <p>CSS is only as clean and organized as its author can dictate. My first attempt at writing CSS on such a large scale was in 2014 when we relaunched Sundance.org. I made some poor decisions along the way like organizing our CSS in a way that doesn't allow for styles to be shared more widely across the site and selectors that are way too specific.</p>
-        <p>I spent some time researching ways to refactor our CSS and had many conversations with our devs. Ultimately we narrowed things down to ITCSS as a methodology and BEM as our naming convention.</p>
+        <p>CSS is only as clean and organized as its author dictates. My first attempt at writing CSS on a very large scale was in 2014 when we relaunched Sundance.org. I made some poor decisions along the way by organizing our CSS in a way that doesn't allow for styles to be shared more widely across the site and selectors that are way too specific. </p>
+        <p>We spent some time researching ways to refactor our CSS and had many conversations with our devs. Ultimately we narrowed things down to ITCSS as a methodology and BEM as our naming convention.</p>
         <p>The ITCSS methodology is based on the idea of organizing CSS in an inverted triangle starting from most broad and far-reaching styles at the top of the hierarchy and building downward to increasingly specific elements. Here’s a quick breakdown:</p>
         <ul class="o-list-bare">
           <li>1. Settings (variables, font sizes, colors, configs)</li>
@@ -59,7 +59,7 @@ layout: case-study
           <li>7. Overrides (otherwise known as the shame folder)</li>
         </ul>
 
-        <p><a target="_blank" href="http://www.creativebloq.com/web-design/manage-large-scale-web-projects-new-css-architecture-itcss-41514731">For those interested, Harry Roberts (the creator) provides a more in-depth explanation</a>.</p>
+        <p><a target="_blank" href="http://www.creativebloq.com/web-design/manage-large-scale-web-projects-new-css-architecture-itcss-41514731">For those interested, Harry Roberts (the creator) provides a fantastic, in-depth explanation</a>.</p>
 
         <p>I had initially wanted to avoid the use of a framework, but as luck would have it, Harry Roberts created InuitCSS. InuitCSS is a framework comprised of both ITCSS and BEM. A framework in its purest sense, InuitCSS comes only with the basic architecture of a CSS library. It contains nothing in the way of design. <em>Music to my ears!</em></p>
 
@@ -87,9 +87,9 @@ layout: case-study
 
         <p style="color: #999;"><em>At the time that I am writing this, we're putting the finishing touches are some of the primary elements before moving forward with integrating it into the production site. I'll be sure to update this post with anything conclusive. So far, so good!</em></p>
 
-        <h3>Epilogue</h3>
-        <p>We're recognizing more and more that having developers present for design is critical to a project's success. For similar reasons, having designers who can help manage front-end code adds a lot of utility and is empowering for teams. Rather than trying to solve the "handoff" problem, the "handoff" itself almost goes away entirely.</p>
-        <p>Teams are becoming more and more cross-functional. As a result, I think the gap between designers and developers will close even further and breed better communication, more empathy, and ultimately better work.</p>
+        <h3>What did we learn?</h3>
+        <p>We're recognizing more and more that having developers present for design is critical to a project's success. For similar reasons, having designers who can help manage front-end code adds a lot of utility and is enabling for teams. Rather than trying to solve the "handoff" problem, the "handoff" itself almost goes away entirely.</p>
+        <p>Teams are becoming more and more cross-functional. As a result, I think the gap between designers and developers will close even further and breed more precise communication, faster output, and ultimately better work.</p>
       </div>
     </div>
   </div>
