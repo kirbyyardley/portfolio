@@ -5,8 +5,9 @@ layout: case-study
   <div class="o-overlay__image--black"></div>
   <div class="o-wrapper" style="width:100%;">
     <div class="o-layout">
-      <div class="o-layout__item u-1/1@desktop u-1/1@tablet">
+      <div class="o-layout__item u-2/3@desktop u-1/1@tablet">
         <h1 style="margin-bottom: 48px;">Sundance.org UI&nbsp;Framework Overhaul</h1>
+        <p>A case study about how we vanquished Sundance.org's CSS bloat.</p>
       </div>
     </div>
   </div>
@@ -68,7 +69,9 @@ layout: case-study
 
         <p>One of the biggest risks when performing a refactor of this scale is that you are making sweeping changes to the codebase. As this is happening, coordinating work between the team becomes very challenging and you're now having to toil with two separate libraries of CSS at once. Our team really wanted to avoid this nightmare. We opted to perform this refactor beforehand, creating all of the components in abstract form before touching the production codebase.</p>
 
-        <p>To do this, I spun up a Jekyll instance, installed Inuit and started assembling our new CSS library on a static front-end by building out every component on Sundance.org. In order for our team to be able to review and contribute, I shared the repo and hosted it as a live web page on Github Pages (<a target="_blank" href="https://github.com/kirbyyardley/Sundance-Styleguide">repo</a>, <a target="_blank" href="https://kirbyyardley.github.io/Sundance-Styleguide/cards/">live version</a>). Since we were building this static set of front-end components anyway, it made perfect sense for us to turn this into our living style guide. Complete with design documentation, live examples and code snippets, this is now a great resource for our developers for future projects.</p>
+        <p>To do this, I spun up a Jekyll instance, installed Inuit and started assembling our new CSS library on a static front-end by building out every component on Sundance.org. The result of this work is now a <a target="_blank" href="https://sundance-org.github.io/styles/cards/">living styleguide</a>, which our developers can now reference for documentation, code snippets and live examples.</p>
+
+        <p>With all of this front-end work done up front, integrating this into the production codebase was a much quicker process and posed far less risk.<p>
 
         <div class="o-layout">
           <div class="o-layout__item u-1/3@desktop u-1/3@tablet u-1/2@mobile">
@@ -82,13 +85,31 @@ layout: case-study
           </div>
         </div>
 
-        <p><br>And we were off to the races!</p>
-
-        <p style="color: #999;"><em>At the time that I am writing this, we're putting the finishing touches are some of the primary elements before moving forward with integrating it into the production site. I'll be sure to update this post with anything conclusive. So far, so good!</em></p>
+        <h3>The Results</h3>
+        <div class="o-layout">
+          <div class="o-layout__item u-1/3@desktop">
+            <ul class="o-list-bare">
+              <li><strong>Pre-refactor CSS:</strong><br>1025kb at 27,477 lines</li>
+              <li><strong>Post-refactor CSS:</strong><br>300kb at 8,000 lines</li>
+              <li><strong>Estimated Final CSS File:</strong><br>~175kb (after minification)</li>
+            </ul>
+          </div>
+          <div class="o-layout__item u-1/3@desktop">
+            <ul class="o-list-bare">
+              <li><strong>Pre-refactor largest selector length:</strong><br>11</li>
+              <li><strong>Post-refactor largest selector length:</strong><br>7</li>
+            </ul>
+          </div>
+          <div class="o-layout__item u-1/3@desktop">
+            <ul class="o-list-bare">
+              <li><strong>Pre-refactor total selectors used:</strong><br>4674</li>
+              <li><strong>Post-refactor total selectors used:</strong><br>939</li>
+            </ul>
+          </div>
+        </div>
 
         <h3>What did we learn?</h3>
-        <p>We're recognizing more and more that having developers present for design is critical to a project's success. For similar reasons, having designers who can help manage front-end code adds a lot of utility and is enabling for teams. Rather than trying to solve the "handoff" problem, the "handoff" itself almost goes away entirely.</p>
-        <p>Teams are becoming more and more cross-functional. As a result, I think the gap between designers and developers will close even further and breed more precise communication, faster output, and ultimately better work.</p>
+        <p>It's true that having developers present for as much of the design process as possible is necessary for creating great products. Having designers who are capable of contributing to the development process can also be invaluable. Our project minimized the "hand-off" problem by working to remove it from the process entirely.</p>
       </div>
     </div>
   </div>

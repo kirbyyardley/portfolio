@@ -16,13 +16,11 @@
 title: Kirby Yardley | UI/UX Designer
 email: kirbytyardley@gmail.com
 description: > # this means to ignore newlines until "baseurl:"
-  Write an awesome description for your new site here. You can edit this
-  line in _config.yml. It will appear in your document head meta (for
-  Google search results) and in your feed.xml site description.
+  I'm passionate about solving problems for people and firmly believe in a human-centered approach to product design. I am able to create design systems that are elegant, manageable, and adhere to modern typographic and interface standards.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
-twitter_username: jekyllrb
-github_username:  jekyll
+twitter_username: kirby_yardley
+github_username:  kirbyyardley
 
 # Build settings
 markdown: kramdown
