@@ -1,6 +1,8 @@
 body.loading, html.loading {
-  overflow: hidden;
-  // height: 100%;
+  overflow: auto;
+  @include mq($until: tablet) {
+    overflow: hidden;
+  }
 }
 
 .c-progress {

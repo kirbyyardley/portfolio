@@ -1,9 +1,22 @@
+// .c-page, .c-main {
+//   max-width: 960px;
+//   margin: 0 auto;
+// }
+
 .c-section {
   min-height: 667px;
 }
 .c-section__1 {
   p {
   }
+}
+
+.c-images {
+  float: left;
+}
+
+.c-images--padded {
+  padding: 12px;
 }
 
 .c-section__2 {

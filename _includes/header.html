@@ -6,37 +6,47 @@
   {% endfor %}
 </div> -->
 
+<div class="c-loading__modal">
+  <div class="c-progress">
+    <div class="c-progress__bar"></div>
+  </div>
+  <div class="c-loading__container">
+    <div class="c-loading__container--inner">
+      <div class="c-loading__top"></div>
+      <div class="c-loading__main up">
+        <p>initializing buzzwords...</p>
+        <p>ideating good ideas...</p>
+        <p>evangelizing some things...</p>
+        <p>making everything parallax...</p>
+        <p>generating hype...</p>
+      </div>
+      <div class="c-loading__bottom"></div>
+    </div>
+  </div>
+</div>
+
 <nav class="c-nav">
   <div class="c-menu">
     <div class="c-eye__container">
       <div class="c-eye"></div>
     </div>
   </div>
-  {% if page.url != "/" %}
-  <div class="c-nav__back">
-    <a href="{{ site.url }}/">return</a>
-  </div>
-  {% endif %}
 </nav>
+
 <div class="c-nav__menu-container">
   <div class="c-nav__overlay"></div>
   <div class="c-nav__list-container">
-    <ul class="o-list-bare">
-      <li><a class="c-nav__item" href="{{ site.url }}/">Home</a></li>
-      <li><a class="c-nav__item" href="{{ site.url }}#work">Work</a>
-        <ul class="o-list-bare">
-          <li><a href="{{ site.url }}/sundance-history">Sundance Digital Archive</a></li>
-          <li><a href="{{ site.url }}/sundance-styleguide">Sundance UI Framework Overhaul</a></li>
-          <li><a href="{{ site.url }}/sundance-photos">Sundance Photo Gallery</a></li>
-        </ul>
-      </li>
-      <li><a class="c-nav__item" href="{{ site.url }}#about">About</a></li>
-      <li><a class="c-nav__item" href="{{ site.url }}#contact">Contact</a></li>
-      <li><a class="c-nav__item" target="_blank" href="{{ site.url }}/assets/img/resume-2017_04_19.pdf">Resume</a></li>
-    </ul>
-    <ul class="o-list-inline c-sosh-links">
-      <li class="o-list-inline__item"><a href="https://twitter.com/kirby_yardley" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
-      <li class="o-list-inline__item"><a href="https://www.linkedin.com/in/kirbyyardley" target="_blank"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
-    </ul>
+    <div class="c-nav__list">
+      <ul class="o-list-bare">
+        <li>Kirby Yardley</li>
+        <li>Designer / Developer</li>
+        <li>Writer / Creator</li>
+      </ul>
+      <ul class="o-list-bare">
+        <li><a class="c-nav__item" href="{{ site.url }}/">Work</a></li>
+        <li><a class="c-nav__item" href="{{ site.url }}/about">About</a></li>
+        <li><a class="c-nav__item" href="{{ site.url }}/contact">Contact</a></li>
+      </ul>
+    </div>
   </div>
 </div>

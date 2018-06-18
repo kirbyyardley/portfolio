@@ -74,7 +74,7 @@ $inuit-use-markup-fix: false !default;
   margin:  0; /* [2] */
   padding: 0; /* [2] */
   list-style: none; /* [1] */
-  margin-left: -$inuit-global-spacing-unit; /* [3] */
+  margin-left: -$inuit-global-spacing-unit/3; /* [3] */
 
   @if ($inuit-use-markup-fix == false) {
     font-size: 0;
@@ -100,7 +100,7 @@ $inuit-use-markup-fix: false !default;
     display: inline-block; /* [2] */
     vertical-align: top; /* [3] */
     width: 100%; /* [4] */
-    padding-left: $inuit-global-spacing-unit; /* [5] */
+    margin-left: $inuit-global-spacing-unit/3; /* [5] */
 
     @if ($inuit-use-markup-fix == false) {
       font-size: $inuit-global-font-size; /* [6] */

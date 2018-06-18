@@ -15,11 +15,11 @@
 // will sit on our baseline grid.
 
 $inuit-font-size-h1:  60px !default;
-$inuit-font-size-h2:  48px !default;
-$inuit-font-size-h3:  36px !default;
+$inuit-font-size-h2:  40px !default;
+$inuit-font-size-h3:  32px !default;
 $inuit-font-size-h4:  24px !default;
-$inuit-font-size-h5:  18px !default;
-$inuit-font-size-h6:  16px !default;
+$inuit-font-size-h5:  20px !default;
+$inuit-font-size-h6:  14px !default;
 
 
 h1 {
@@ -52,6 +52,9 @@ h4 {
 
 h5 {
   @include inuit-font-size($inuit-font-size-h5);
+  @include mq($until: tablet) {
+    @include inuit-font-size(16px);
+  }
 }
 
 h6 {
@@ -60,12 +63,18 @@ h6 {
 
 h1, h2, h3, h4, h5, h6 {
   font-family: $heading-font-family;
-  font-weight: normal;
   letter-spacing: 0.05em;
   line-height: 1;
-  text-transform: uppercase;
 }
 
-h3, h4 {
-  color: $color-red;
+h1, h2 {
+  font-weight: 700;
+}
+
+h3, h4, h5, h6 {
+  font-weight: 300;
+}
+
+p + h1, p + h2, p + h3, p + h4, p + h5, p + h6 {
+  margin-top: $inuit-global-spacing-unit*2;;
 }

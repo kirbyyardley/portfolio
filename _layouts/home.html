@@ -2,109 +2,27 @@
 layout: default
 ---
 
-{% include loading.html %}
+<div id="buttons" class="c-sort">
 
-<section class="c-section c-section__1 o-height--half o-center--vertical">
-  <div class="o-wrapper" style="width:100%;">
-    <div class="o-layout">
-      <div class="o-layout__item u-2/3@desktop u-1/1@tablet">
-        <h2 style="margin:0;">Kirby Yardley</h2>
-        <h4>UX/UI Designer, Salt Lake City</h4>
-        <p>I'm passionate about solving problems for people and firmly believe in a human-centered approach to product design. I am able to create design systems that are elegant, manageable, and adhere to modern typographic and interface standards.</p> <p>I&nbsp;also have some coding chops ;)</p>
-        <p><a class="c-nav__item" href="#work">work</a> <a style="margin-left: 20px;" class="c-nav__item" href="#about">about</a> <a style="margin-left: 20px;" class="c-nav__item" href="#contact">contact</a></p>
-      </div>
-    </div>
-  </div>
-</section>
-
-<section id="work" class="c-section c-section__2 o-wrapper">
-  <div class="o-layout">
-    <div class="o-layout__item u-1/2@desktop u-1/2@tablet">
-      <div class="o-crop o-crop--16:9 c-section__full-bleed" style="margin-bottom: 30px;">
-        <a href="/sundance-history">
-          <img style="width:100%;" class="o-crop__content" src="{{ "assets/img/history-00.jpg" | relative_url }}" alt="">
-        </a>
-      </div>
-    </div>
-    <div class="o-layout__item u-1/2@desktop u-1/2@tablet">
-      <h4>Sundance Digital&nbsp;Archive</h4>
-      <h2>A database can tell a&nbsp;story</h2>
-      <p><a href="/sundance-history">view project</a></p>
-    </div>
-  </div>  <div class="o-layout  o-layout--reverse">
-    <div class="o-layout__item u-1/2@desktop u-1/2@tablet u-1/1@tablet">
-      <div class="o-crop o-crop--16:9 c-section__full-bleed" style="margin-bottom: 30px;">
-        <a href="/sundance-styleguide">
-          <img style="width:100%;" class="o-crop__content  o-crop__content--center" src="assets/img/styleguide--hero.png" alt="">
-        </a>
-      </div>
-    </div>
-    <div class="o-layout__item u-1/2@desktop u-1/2@tablet u-1/1@tablet">
-      <h4>Sundance UI&nbsp;Framework Overhaul</h4>
-      <h2>Refreshing Design and Refactoring CSS</h2>
-      <p><a href="/sundance-styleguide">view project</a></p>
-    </div>
-  </div>
-
-  <div class="o-layout">
-    <div class="o-layout__item u-1/2@desktop u-1/2@tablet u-1/1@tablet">
-      <div class="o-crop o-crop--16:9 c-section__full-bleed" style="margin-bottom: 30px;">
-        <a href="/sundance-photos">
-          <img style="width:100%;" class="o-crop__content" src="{{ "assets/img/photo-00.jpg" | relative_url }}" alt="">
-        </a>
-      </div>
-    </div>
-    <div class="o-layout__item u-1/2@desktop u-1/2@tablet u-1/1@tablet">
-      <h4>Sundance Photo&nbsp;Gallery</h4>
-      <h2>Organizating Decades of Photography</h2>
-      <p><a href="/sundance-photos">view project</a></p>
-    </div>
-  </div>
 </div>
-</section>
 
-<section id="about" class="c-section c-section__3 o-height--full o-center--vertical" style="background-image:url('{{ "assets/img/portfolio_hero.jpg" | relative_url }}');">
-  <div class="o-wrapper" style="width:100%;">
-    <div class="o-layout">
-      <div class="o-layout__item u-1/2@desktop u-1/2@tablet u-2/3">
-        <h2>About Me</h2>
-        <p>I love human-centered design because it allows me to meet new people and learn about their interests, goals, and motivations. Applying this knowledge in a way that helps solve problems or enhance someone's life is very gratifying.</p>
-        <p>If I don't have my nose buried in a book, you're likely to find me kicking the soccer ball around at the park or wandering around Utah's beautiful mountains.</p>
-      </div>
-    </div>
-  </div>
-</section>
+<div id="gallery" class="c-work">
 
-<section id="contact" class="c-section c-section__4 o-height--full o-center--vertical"  style="100px 0; background: #f5f5f5">
-  <div class="o-wrapper" style="width:100%;">
-    <div class="o-layout">
-      <div class="o-layout__item u-2/3@desktop u-1/1@tablet">
-        <h2>Get in touch.</h2>
-        <ul style="margin: 0;" class="o-list-inline">
-          <li style="font-size: 32px; margin-right: 20px;" class="o-list-inline__item"><a href="https://twitter.com/kirby_yardley" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
-          <li  style="font-size: 32px; margin-right: 20px;" class="o-list-inline__item"><a href="https://www.linkedin.com/in/kirbyyardley" target="_blank"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
-          <li  style="font-size: 32px; margin-right: 20px;" class="o-list-inline__item"><a href="https://www.linkedin.com/in/kirbyyardley" target="_blank"><i class="fa fa-github" aria-hidden="true"></i></a></li>
-        </ul>
-        <div class="c-form">
-          <form accept-charset="UTF-8" action="https://formkeep.com/f/e23e0c1556aa" method="POST">
-            <div class="o-layout">
-                <div class="o-layout__item u-1/2@desktop">
-                  <input type="email" name="email" placeholder="Your Email">
-                </div>
-                <div class="o-layout__item u-1/2@desktop">
-                  <input type="text" name="name" placeholder="Your Name">
-                </div>
-                <div class="o-layout__item u-1/1@desktop">
-                  <textarea name="message" rows="5" placeholder="Type your message here"></textarea>
-                </div>
-                <input type="hidden" name="utf8" value="✓">
-                <div class="o-layout__item u-1/1@desktop">
-                  <button style="width: 100%;" class="c-btn c-btn--primary" type="submit">Submit</button>
-                </div>
-            </div>
-          </form>
+  <div class="">
+    {% for page in site.projects reversed %}
+    <div class="u-1/3@desktop u-1/2@tablet u-1/2@mobile u-1/1 c-work-item c-work-item--{{ page.categories }}" data-tags="{{ page.categories }}">
+      <div class="o-overlay__image--black"></div>
+      <a href="{{ page.url }}">
+        <div class="c-work-item__label">
+          <h5>{{ page.title }}</h5>
+          <span>{{ page.summary }}</span>
         </div>
-      </div>
+        <div class="o-crop o-crop--1:1">
+          <img src="{{ site.baseurl }}/assets/img/{{ page.image }}" class="o-crop__content o-crop__content--center" alt="">
+        </div>
+      </a>
     </div>
+    {% endfor %}
   </div>
-</section>
+
+</div>
