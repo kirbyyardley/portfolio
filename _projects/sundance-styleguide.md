@@ -5,7 +5,7 @@ heading: "Case Study"
 title:  "Sundance.org Styleguide and CSS Refactorization"
 summary: "research, design, code, implementation"
 image: styleguide-2.png
-date:   2018-05-10 11:26:56 -0700
+date:   2018-05-20
 categories: design
 ---
 

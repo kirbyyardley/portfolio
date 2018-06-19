@@ -5,7 +5,7 @@ heading: "Writing"
 title:  "Beyond Good and Evil, One Paragraph at a Time"
 summary: "writing"
 image: nietzsche.gif
-date:   2018-04-02 11:26:56 -0700
+date:   2018-03-20 11:26:56 -0700
 categories: writing
 ---
 

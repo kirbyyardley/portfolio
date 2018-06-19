@@ -35,4 +35,7 @@ collections:
   projects:
     output: true
     permalink: /project/:path/
-    
+    categories-order:
+      - design
+      - video
+      - writing

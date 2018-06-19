@@ -5,7 +5,7 @@ heading: "Video"
 title:  "Analysis: The Leftovers Part Two"
 summary: "writing, production, video editing"
 image: leftovers-2.jpg
-date:   2018-04-06 11:26:56 -0700
+date:   2018-04-20
 categories: video
 ---
 

@@ -5,7 +5,7 @@ heading: "Project"
 title:  "2018 Sundance Film Festival Mobile App"
 summary: "research, prototyping, ui design"
 image: app-1.jpg
-date:   2018-06-04 11:26:56 -0700
+date:   2018-05-30
 categories: design
 ---
 

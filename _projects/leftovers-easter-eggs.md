@@ -5,7 +5,7 @@ heading: "Video"
 title:  "The Leftovers Easter Eggs"
 summary: "writing, production, video editing"
 image: leftovers-easter.jpg
-date:   2018-04-18 11:26:56 -0700
+date:   2018-04-01
 categories: video
 ---
 

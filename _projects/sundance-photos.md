@@ -5,7 +5,7 @@ heading: "Project"
 title:  "Sundance.org Photo Gallery"
 summary: "research, user testing, design, code"
 image: photo-thumb.png
-date:   2018-04-07 11:26:56 -0700
+date:   2018-05-01
 categories: design
 ---
 

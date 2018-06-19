@@ -9,6 +9,7 @@ layout: default
 <div id="gallery" class="c-work">
 
   <div class="">
+    
     {% for page in site.projects reversed %}
     <div class="u-1/3@desktop u-1/2@tablet u-1/2@mobile u-1/1 c-work-item c-work-item--{{ page.categories }}" data-tags="{{ page.categories }}">
       <div class="o-overlay__image--black"></div>

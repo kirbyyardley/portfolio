@@ -5,7 +5,7 @@ heading: "Case Study"
 title:  "Sundance Institute Creative Distribution"
 summary: "research, design, code"
 image: case-study-1.jpg
-date:   2018-04-04 11:26:56 -0700
+date:   2018-05-10
 categories: design
 ---
 
