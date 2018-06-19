@@ -41,13 +41,15 @@ button:focus {outline:none;}
     font-weight: 300;
     z-index: 100;
     opacity: 0;
-    color: $color-black;
+    color: $color-yellow;
     transition: all 0.3s ease;
-
     top: 16px;
     left: 16px;
     font-size: 24px;
     transform: translate(0,0);
+    @include mq($until: desktop) {
+      opacity: 1;
+    }
   }
   float: left;
   cursor: pointer;
@@ -60,6 +62,9 @@ button:focus {outline:none;}
   .o-overlay__image--black {
     opacity: 0;
     transition: opacity 0.5s ease;
+    @include mq($until: desktop) {
+      opacity: 1;
+    }
   }
   &:hover {
     .o-overlay__image--black, .c-work-item__label {
@@ -103,5 +108,8 @@ button:focus {outline:none;}
     margin: 0;
     font-weight: 700;
     line-height: 30px;
+  }
+  @include mq($until: desktop) {
+    opacity: 1;
   }
 }

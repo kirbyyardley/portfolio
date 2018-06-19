@@ -52,3 +52,18 @@ $( document ).ready(function() {
   });
 
 });
+
+
+
+$(document).ready(function(){
+    resizeContent();
+
+    $(window).resize(function() {
+        resizeContent();
+    });
+});
+
+function resizeContent() {
+    $height = $(window).height();
+    $('body div.c-nav__list-container').height($height);
+}
