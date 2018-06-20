@@ -2,7 +2,7 @@
 layout: page
 type: project
 heading: "Project"
-title:  "2018 Sundance Film Festival Mobile App"
+title:  "Sundance Film Festival Mobile App"
 summary: "research, prototyping, ui design"
 image: app-1.jpg
 date:   2018-05-30

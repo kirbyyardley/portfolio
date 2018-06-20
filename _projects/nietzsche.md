@@ -12,7 +12,7 @@ categories: writing
 <div class="c-page">
   <div class="o-layout o-layout--center">
     <div class="o-layout__item u-2/3@desktop">
-      <h2>Nietzche's <em>Beyond Good and Evil</em>, One Paragraph at a Time</h2>
+      <h3>Nietzche's <em>Beyond Good and Evil</em>, One Paragraph at a Time</h3>
 
       <p><em>Beyond Good and Evil</em> is comprised of 296 paragraphs, or aphorisms, each of which is densely packed with the profound thoughts of one of the worlds most incredible thinkers.</p>
 

@@ -12,7 +12,7 @@ categories: design
 <div class="c-page">
   <div class="o-layout o-layout--center">
     <div class="o-layout__item u-2/3@desktop">
-      <h2>Case Study: Sundance.org Styleguide and CSS Refactorization</h2>
+      <h3>Case Study: Sundance.org Styleguide and CSS Refactorization</h3>
       <p>A complete overhaul of Sketch documents, a new components library, and a very impactful CSS refactorization all rolled into a single project.</p>
     </div>
     <div class="o-layout__item u-2/3@desktop o-spacer__bottom">

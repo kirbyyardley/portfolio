@@ -12,7 +12,7 @@ categories: video
 <div class="c-page">
   <div class="o-layout o-layout--center">
     <div class="o-layout__item u-2/3@desktop o-spacer__bottom">
-      <h2>The Psychology of Kevin Part Three</h2>
+      <h3>The Psychology of Kevin Part Three</h3>
       <p>This video essay is the third installment of my analysis of the HBO televisions series <em>The Leftovers</em>.</p>
     </div>
     <div class="o-layout__item">

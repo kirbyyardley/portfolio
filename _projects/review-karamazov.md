@@ -12,7 +12,7 @@ categories: writing
 <div class="c-page">
   <div class="o-layout o-layout--center">
     <div class="o-layout__item u-2/3@desktop">
-      <h2>Review: <em>The Brothers Karamazov</em></h2>
+      <h3>Review: <em>The Brothers Karamazov</em></h3>
 
       <p>As Russia was evolving into modernity in the latter half of the 19th century, Fyodor Dostoyevsky was keenly aware of the rapidly shifting world around him. Religious belief was in decline and the “new man” was beginning to stake his claim on the world. New political and philosophical questions were being asked, which the author goes to great lengths to address in this book. Dostoyevsky gives each facet of every philosophical idea a fair share of the spotlight. Imbued in every scene and character arc is a dialogue about the nature of man and his relationship to society, nature, and God.</p>
 

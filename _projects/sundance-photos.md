@@ -12,7 +12,7 @@ categories: design
 <div class="c-page">
   <div class="o-layout o-layout--center">
     <div class="o-layout__item u-2/3@desktop">
-      <h2>Sundance.org Photo Gallery</h2>
+      <h3>Sundance.org Photo Gallery</h3>
       <p>Sundance Institute's archive team possesses a wealth of interesting and inspiring photography dating back as far as 1980, when Sundance was first founded. The goal of this project was to enable the archives team to organize these photos in a manner that is fun accessible, and engaging to visitors of Sundance.org</p>
     </div>
     <div class="o-layout__item u-2/3@desktop o-spacer__bottom">

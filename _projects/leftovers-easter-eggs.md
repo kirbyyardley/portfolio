@@ -12,7 +12,7 @@ categories: video
 <div class="c-page">
   <div class="o-layout o-layout--center">
     <div class="o-layout__item u-2/3@desktop o-spacer__bottom">
-      <h2>The Leftovers Easter Eggs</h2>
+      <h3>The Leftovers Easter Eggs</h3>
       <p>A complementary video to accompany my three part video essay series which analyses the HBO television series <em>The Leftovers</em>.</p>
     </div>
     <div class="o-layout__item">

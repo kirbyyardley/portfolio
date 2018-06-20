@@ -12,7 +12,7 @@ categories: design
 <div class="c-page">
   <div class="o-layout o-layout--center">
     <div class="o-layout__item u-2/3@desktop">
-      <h2>Sundance Institute Creative Distribution Case Studies</h2>
+      <h3>Sundance Institute Creative Distribution Case Studies</h3>
       <p>This project involved developing design patterns that would enable us to tell the stories of two independent film teams that were carrying out their own distribution plans in an attempt to bypass the traditional models of independent film distribution. A mixture of image-based and written content, in addition to various data visualization elements, enabled us to effectively communicate the challenges and successes of these two case studies. </p>
     </div>
     <div class="o-layout__item u-2/3@desktop o-spacer__top">
