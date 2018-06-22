@@ -24,28 +24,6 @@ categories: design
       <img style="margin-bottom: 24px;" src="{{ "assets/img/styleguide--hero.png" | relative_url }}" alt="">
     </div>
 
-    <!-- <div class="o-layout__item u-1/1@desktop u-1/1@tablet">
-      <div class="c-images u-1/2">
-        <img data-action="zoom" src="{{ "assets/img/history-12.jpg" | relative_url }}">
-      </div>
-      <div class="c-images u-1/2">
-        <img data-action="zoom" src="{{ "assets/img/history-11.jpg" | relative_url }}">
-      </div>
-      <div class="c-images u-1/2">
-        <img data-action="zoom" src="{{ "assets/img/history-10.jpg" | relative_url }}">
-      </div>
-      <div class="c-images u-1/2">
-        <img data-action="zoom" src="{{ "assets/img/history-14.jpg" | relative_url }}">
-      </div>
-      <div class="c-images u-1/2">
-        <img data-action="zoom" src="{{ "assets/img/history-9.jpg" | relative_url }}">
-      </div>
-      <div class="c-images u-1/2">
-        <img data-action="zoom" src="{{ "assets/img/history-13.jpg" | relative_url }}">
-      </div>
-    </div> -->
-
-
     <div class="o-layout__item u-2/3@desktop o-spacer__bottom">
 
       <h4 id="design">I. Sketch Overhaul (Design Debt)</h4>
@@ -61,13 +39,13 @@ categories: design
     </div>
 
     <div class="o-layout__item u-1/1@desktop u-1/1@tablet o-spacer__bottom--large">
-      <div class="c-images u-1/3">
+      <div class="c-images c-images--padded u-1/3">
         <img data-action="zoom" src="{{ "assets/img/styleguide-symbols.png" | relative_url }}">
       </div>
-      <div class="c-images u-1/3">
+      <div class="c-images c-images--padded u-1/3">
         <img data-action="zoom" src="{{ "assets/img/styleguide-buttonsymbols.png" | relative_url }}">
       </div>
-      <div class="c-images u-1/3">
+      <div class="c-images c-images--padded u-1/3">
         <img data-action="zoom" src="{{ "assets/img/styleguide-textsymbols.png" | relative_url }}">
       </div>
     </div>
