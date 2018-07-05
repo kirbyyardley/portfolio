@@ -6,7 +6,7 @@
   {% endfor %}
 </div> -->
 
-<div class="c-loading__modal">
+<!-- <div class="c-loading__modal">
   <div class="c-progress">
     <div class="c-progress__bar"></div>
   </div>
@@ -23,30 +23,26 @@
       <div class="c-loading__bottom"></div>
     </div>
   </div>
-</div>
+</div> -->
 
-<nav class="c-nav">
-  <div class="c-menu">
-    <div class="c-eye__container">
-      <div class="c-eye"></div>
-    </div>
-  </div>
+<!-- Trigger element, which is hidden -->
+<input type="checkbox" id="menu-trigger" />
+<!-- Thus label which control the trigger. The hamburger icon is a background image in      the CSS (base64 encoded svg) in main.css. Hover and close states in defer.css-->
+<label for="menu-trigger" class="c-nav__open-menu btn">
+  <span></span>
+  <span></span>
+</label>
+<!-- The menu that slides in. Styles in defer.css -->
+<nav class="c-nav__menu" id="menu" role="navigation">
+    <ul class="c-nav o-list-inline">
+        <li class="c-nav-home" role="presentation">
+            <a href="/#design">Work</a>
+        </li>
+        <li class="nav-become-an-advisor" role="presentation">
+            <a href="/about">About</a>
+        </li>
+        <li class="nav-" role="presentation">
+            <a href="/contact">Contact</a>
+        </li>
+    </ul>
 </nav>
-
-<div class="c-nav__menu-container">
-  <div class="c-nav__overlay"></div>
-  <div class="c-nav__list-container">
-    <div class="c-nav__list">
-      <ul class="o-list-bare">
-        <li>Kirby Yardley</li>
-        <li>Designer / Developer</li>
-        <li>Writer / Creator</li>
-      </ul>
-      <ul class="o-list-bare">
-        <li><a class="c-nav__item" href="{{ site.url }}/">Work</a></li>
-        <li><a class="c-nav__item" href="{{ site.url }}/about">About</a></li>
-        <li><a class="c-nav__item" href="{{ site.url }}/contact">Contact</a></li>
-      </ul>
-    </div>
-  </div>
-</div>

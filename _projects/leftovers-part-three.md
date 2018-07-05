@@ -2,17 +2,19 @@
 layout: page
 type: project
 heading: "Video"
-title:  "Analysis: The Leftovers Part Three"
-summary: "writing, production, video editing"
+title:  "The Leftovers: The Psychology of Kevin Part Three"
+summary: "Film Analysis"
 image: leftovers-3.jpg
 date:   2018-04-30
 categories: video
+videofile: PartThreePreview.mp4
+videopreview: PartThreePreview.jpg
 ---
 
-<div class="c-page">
-  <div class="o-layout o-layout--center">
+<div class="o-wrapper">
+  <div class="o-layout o-layout--center o-spacer__top--huge">
     <div class="o-layout__item u-2/3@desktop o-spacer__bottom">
-      <h3>The Psychology of Kevin Part Three</h3>
+      <h3>The Leftovers: The Psychology of Kevin Part Three</h3>
       <p>This video essay is the third installment of my analysis of the HBO televisions series <em>The Leftovers</em>.</p>
     </div>
     <div class="o-layout__item">

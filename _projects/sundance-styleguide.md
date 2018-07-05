@@ -2,21 +2,23 @@
 layout: page
 type: project
 heading: "Case Study"
-title:  "Sundance.org Styleguide and CSS Refactorization"
-summary: "research, design, code, implementation"
-image: styleguide-2.png
-date:   2018-05-20
+title:  "Sundance.org Style Guide and CSS Refactorization"
+summary: "A complete design library overhaul, from Sketch to CSS."
+image: styleguide-preview.png
+date:   2018-05-30
 categories: design
+code: 'styleguide'
+cta: 'Read Case Study'
 ---
 
-<div class="c-page">
-  <div class="o-layout o-layout--center">
+<div class="o-wrapper">
+  <div class="o-layout o-layout--center o-spacer__top--huge">
     <div class="o-layout__item u-2/3@desktop">
       <h3>Case Study: Sundance.org Styleguide and CSS Refactorization</h3>
       <p>A complete overhaul of Sketch documents, a new components library, and a very impactful CSS refactorization all rolled into a single project.</p>
     </div>
     <div class="o-layout__item u-2/3@desktop o-spacer__bottom">
-      <p><em>Role: Design, Development, Strategy, Implementation</em></p>
+      <p><em>Role: UI Design, Front-End Development, Strategy, Implementation</em></p>
       <p><a rel="nofollow" href="https://sundance-org.github.io/styles/cards/" target="_blank">View Project</a></p>
       <p>Jump to section:<br><a href="#design">I. Sketch Overhaul</a> | <a href="#code">II. CSS Methodology</a> | <a href="#jekyll">III. Abstract Refactoring</a></p>
     </div>
@@ -34,7 +36,7 @@ categories: design
 
       <p>Jon Moore's UX Power Tools Toolbox became my starting point, which comes preloaded with entire ecosystem of symbols and components. I spent several days tinkering and learning, learning and tinkering, until finally I had put together a library of components that was fit for Sundance.org.</p>
 
-      <p><strong>If my symbols page looks scary to you, that's because it is. But I promise, there is genius to this madness.</strong></p>
+      <p><strong>My symbols page looks pretty scary, but I promise, there is genius to this madness.</strong></p>
 
     </div>
 

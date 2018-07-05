@@ -3,7 +3,7 @@
 }
 
 .o-spacer__top {
-  margin-bottom: $inuit-global-spacing-unit;
+  margin-top: $inuit-global-spacing-unit;
 }
 
 .o-spacer__bottom--large {
@@ -11,5 +11,13 @@
 }
 
 .o-spacer__top--large {
-  margin-bottom: $inuit-global-spacing-unit*2;
+  margin-top: $inuit-global-spacing-unit*2;
+}
+
+.o-spacer__bottom--huge {
+  margin-bottom: $inuit-global-spacing-unit*4;
+}
+
+.o-spacer__top--huge {
+  margin-top: $inuit-global-spacing-unit*4;
 }

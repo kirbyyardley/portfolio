@@ -1,0 +1,96 @@
+.c-video__container {
+  position: relative;
+  overflow: hidden;
+}
+
+.c-video__video {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  -ms-transform: translateX(-50%) translateY(-50%);
+  -moz-transform: translateX(-50%) translateY(-50%);
+  -webkit-transform: translateX(-50%) translateY(-50%);
+  transform: translateX(-50%) translateY(-50%);
+}
+
+.c-video__overlay {
+  z-index: 1;
+  position: absolute;
+  top: -1px;
+  right: -1px;
+  bottom: -1px;
+  left: -1px;
+  background: $color-black;
+  opacity: .6;
+  transform:translate3d(0, 0, 1px)!important;
+}
+
+.c-video__inner {
+  height: 100%;
+}
+
+.c-video__project {
+  cursor: pointer;
+  overflow: hidden;
+  position: relative;
+  height: 100%;
+  float: left;
+  width: 33.33%;
+  padding: $inuit-global-spacing-unit;
+  a {
+    display: block;
+    height: 100%
+  }
+  @include mq($until: desktop) {
+    width: 50%;
+    &:last-child {
+      width: 100%;
+    }
+  }
+  @include mq($until: tablet) {
+    width: 100%;
+  }
+}
+
+.c-video__label-container {
+  z-index: 2;
+  position: absolute;
+  width: 100%;
+  max-width: 400px;
+  padding: 0 $inuit-global-spacing-unit;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) translate3d(0, 0, 1px)!important;
+}
+
+.c-video__label {
+  position: relative;
+  text-align: center;
+  transition: opacity .2s ease;
+  &:before {
+    position: absolute;
+    top: -80px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    content: '\f144';
+    color: $color-white;
+    font-family: $icon-font-family;
+    font-size: 48px;
+    font-weight: 300;
+    margin: 0;
+    padding: 0;
+    line-height: 1em;
+  }
+  span {
+    display: inline-block;
+    color: $color-white;
+    margin-bottom: 8px;
+  }
+  .c-video__project:hover &, .c-video__project:focus & {
+    opacity: .15;
+  }
+}

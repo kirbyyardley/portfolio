@@ -36,7 +36,7 @@
    ========================================================================== */
 
 .c-btn--primary {
-  background-color: $color-red;
+  background-color: $color-salmon;
 
   &,
   &:hover,
@@ -48,7 +48,7 @@
 
   &:hover,
   &:focus {
-    background-color: lighten($color-red, 0.5);
+    background-color: $color-light-blue;
   }
 
 }

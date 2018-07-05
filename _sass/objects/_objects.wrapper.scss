@@ -15,12 +15,16 @@ $inuit-wrapper-width: 1160px !default;
 /* stylelint-enable */
 
 .o-wrapper {
-  @include inuit-clearfix();
-  padding-right: $inuit-global-spacing-unit*.666;
-  padding-left:  $inuit-global-spacing-unit*.666;
+  // @include inuit-clearfix();
+  padding-right: $inuit-global-spacing-unit*2;
+  padding-left:  $inuit-global-spacing-unit*2;
   margin-right: auto;
   margin-left:  auto;
   max-width: $inuit-wrapper-width;
+  @include mq($until: desktop) {
+    padding-right: $inuit-global-spacing-unit;
+    padding-left:  $inuit-global-spacing-unit;
+  }
 }
 
 

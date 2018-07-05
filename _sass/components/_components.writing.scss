@@ -1,0 +1,40 @@
+.c-project--writing {
+  float: left;
+  width: 50%;
+  padding: 12px;
+  .c-project__wrapper {
+    // width: 100%;
+    // padding-bottom: 75%;
+  }
+  .c-project__inner {
+    // display: -webkit-flex;
+    // display: flex;
+    // flex-direction: column;
+    // height: 400px;
+  }
+  .c-project__label {
+    margin-top: 24px;
+    span {
+      display: inline-block;
+    }
+    span, h4 {
+      margin-bottom: 8px;
+    }
+
+  }
+  .c-project__image {
+    // overflow: hidden;
+    // flex: 1;
+    // position: relative;
+    // img {
+    //   position: absolute;
+    //   height: 105%;
+    //   width: 105%;
+    //   object-fit: cover;
+    //   max-width: 101%;
+    //   top:  50%;
+    //   left: 50%;
+    //   transform: translate(-50%, -50%);
+    // }
+  }
+}

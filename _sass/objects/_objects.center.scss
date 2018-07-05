@@ -1,9 +1,27 @@
 .o-center--vertical {
   position: relative;
   > div {
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+}
+
+.o-center--both {
+  position: relative;
+  > div {
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
   }
+}
+
+.o-center--bottom {
+  position: absolute;
+  bottom: 0;
+}
+
+.o-height--twothirds, .o-height--full, .o-height--half {
+  min-height:600px;
 }

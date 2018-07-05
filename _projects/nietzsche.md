@@ -3,14 +3,17 @@ layout: page
 type: project
 heading: "Writing"
 title:  "Beyond Good and Evil, One Paragraph at a Time"
-summary: "writing"
+summary: "Article"
+intro: "Beyond Good and Evil is comprised of 296 paragraphs, or aphorisms, each of which is densely packed with the profound thoughts of one of the worlds most incredible thinkers."
 image: nietzsche.gif
 date:   2018-03-20 11:26:56 -0700
 categories: writing
+cta: 'Read Article'
+href: 'https://medium.com/@kirbyyardley/001-nietzsches-beyond-good-and-evil-one-paragraph-at-a-time-66caead168e4'
 ---
 
-<div class="c-page">
-  <div class="o-layout o-layout--center">
+<div class="o-wrapper">
+  <div class="o-layout o-layout--center o-spacer__top--huge">
     <div class="o-layout__item u-2/3@desktop">
       <h3>Nietzche's <em>Beyond Good and Evil</em>, One Paragraph at a Time</h3>
 

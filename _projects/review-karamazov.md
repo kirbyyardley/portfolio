@@ -3,14 +3,17 @@ layout: page
 type: project
 heading: "Writing"
 title:  "Review: The Brothers Karamazov"
-summary: "writing"
+summary: "Review"
+intro: "As Russia was evolving into modernity in the latter half of the 19th century, Fyodor Dostoyevsky was keenly aware of the rapidly shifting world around him."
 image: fyodor.jpg
 date:   2018-03-10 11:26:56 -0700
 categories: writing
+cta: 'Read Review'
+href: 'https://www.goodreads.com/review/show/2383449359'
 ---
 
-<div class="c-page">
-  <div class="o-layout o-layout--center">
+<div class="o-wrapper">
+  <div class="o-layout o-layout--center o-spacer__top--huge">
     <div class="o-layout__item u-2/3@desktop">
       <h3>Review: <em>The Brothers Karamazov</em></h3>
 

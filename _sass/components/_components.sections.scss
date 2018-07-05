@@ -3,12 +3,48 @@
 //   margin: 0 auto;
 // }
 
+.c-hero {
+  // margin-bottom: $inuit-global-spacing-unit*4;
+}
+
+.c-hero__content {
+  margin: $inuit-global-spacing-unit*4 0 $inuit-global-spacing-unit*2;
+  h1 {
+    max-width: 740px;
+    margin-bottom: $inuit-global-spacing-unit/2;
+  }
+}
+
+.c-hero-button {
+  color: $color-white;
+  background-color: $color-light-blue;
+  display: inline-block;
+  vertical-align: middle;
+  text-align: center;
+  cursor: pointer;
+  padding: 16px 48px;
+  border-radius: 3px;
+  font-weight: bold;
+  margin-right: $inuit-global-spacing-unit;
+  margin-bottom: $inuit-global-spacing-unit;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+  -webkit-transition: box-shadow .3s, background-color .3s;
+  -moz-transition: box-shadow .3s, background-color .3s;
+  -ms-transition: box-shadow .3s, background-color .3s;
+  -o-transition: box-shadow .3s, background-color .3s;
+  transition: box-shadow .3s, background-color .3s;
+  &:hover {
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+    // background-color: $color-light-blue;
+  }
+  &.c-hero-button--white {
+    background-color: $color-white;
+    color: $color-light-blue;
+  }
+}
+
 .c-section {
   min-height: 667px;
-}
-.c-section__1 {
-  p {
-  }
 }
 
 .c-images {
@@ -18,59 +54,6 @@
 .c-images--padded {
   padding: 12px;
 }
-
-.c-section__2 {
-  .o-layout {
-    padding-bottom: 100px;
-    @include mq($until: tablet) {
-      padding-bottom: 50px;
-    }
-  }
-  h6 {
-    // margin: 0;
-    display: inline-block;
-    border-bottom: solid 2px black;
-    margin-bottom: 12px;
-  }
-  h4 {
-    margin-bottom: 12px;
-  }
-}
-
-.c-section__3 {
-  background-size:cover;
-  background-position: center;
-  @include mq($until: tablet) {
-    background-position: 68% 100%;
-  }
-  h1, h3, p {
-    color: $color-white;
-  }
-  h2 {
-    color: $color-yellow;
-  }
-  h1 {
-    margin:0;
-  }
-  p {
-    color: $color-white
-  }
-}
-
-.c-case-study {
-  .o-wrapper {
-    max-width: 780px;
-    margin: 0 auto;
-  }
-}
-
-.c-section__full-bleed {
-  @include mq($until: tablet) {
-    margin-left: -20px;
-    margin-right: -20px;
-  }
-}
-
 
 img[data-action="zoom"] {
   cursor: pointer;

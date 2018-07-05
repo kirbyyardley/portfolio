@@ -2,19 +2,21 @@
 layout: page
 type: project
 heading: "Project"
-title:  "Sundance Film Festival Mobile App"
-summary: "research, prototyping, ui design"
-image: app-1.jpg
-date:   2018-05-30
-categories: design
+title:  "Mobile App for Sundance Film Festival"
+summary: "The Sundance Film Festival mobile app is an essential part of the on-the-ground experience of the festival."
+image: app-preview.png
+date:   2018-05-20
+categories: 'design'
+code: 'app'
+cta: 'View Project'
 ---
 
 <img style="display: block; width: 100%;margin: 0 auto; max-width:1200px" src="{{ "assets/img/app-9.jpg" | relative_url }}">
 
-<div class="c-page">
-  <div class="o-layout o-layout--center">
+<div class="o-wrapper">
+  <div class="o-layout o-layout--center o-spacer__top--huge">
     <div class="o-layout__item u-2/3@desktop">
-      <h2>2018 Sundance Film Festival Mobile App</h2>
+      <h3>2018 Sundance Film Festival Mobile App</h3>
       <p>The Sundance Film Festival mobile app is an essential part of the on-the-ground experience of the festival. </p>
     </div>
     <div class="o-layout__item u-2/3@desktop o-spacer__bottom--large">

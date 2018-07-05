@@ -1,0 +1,23 @@
+.c-footer {
+  background: $color-salmon;
+}
+
+.c-footer__social {
+  margin: 0;
+  text-align:center;
+  li {
+    font-size: 32px;
+    margin-right: 24px;
+    margin-bottom: 0;
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+  a {
+    color: $color-white;
+    transition: .375s ease color;
+    &:hover {
+      color: $color-light-blue;
+    }
+  }
+}
