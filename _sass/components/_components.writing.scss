@@ -2,6 +2,11 @@
   float: left;
   width: 50%;
   padding: 12px;
+  @include mq($until: tablet) {
+    width: 100%;
+    padding: 0;
+    margin-bottom: $inuit-global-spacing-unit;
+  }
   .c-project__wrapper {
     // width: 100%;
     // padding-bottom: 75%;
