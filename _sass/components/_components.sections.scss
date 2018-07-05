@@ -17,7 +17,7 @@
 
 .c-hero-button {
   color: $color-white;
-  background-color: $color-light-blue;
+  background-color: $color-2;
   display: inline-block;
   vertical-align: middle;
   text-align: center;
@@ -39,7 +39,7 @@
   }
   &.c-hero-button--white {
     background-color: $color-white;
-    color: $color-light-blue;
+    color: $color-2;
   }
 }
 

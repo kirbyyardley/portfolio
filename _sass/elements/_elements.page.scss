@@ -19,13 +19,14 @@ html {
   line-height: $inuit-global-line-height / $inuit-global-font-size; /* [1] */
   overflow-y: scroll; /* [2] */
   min-height: 100%; /* [3] */
-  background: #ffffff;
+  background: #e3e8eb;
 }
 
 html, body {
   font-size: 16px;
   font-family: $body-font-family;
   letter-spacing: .05em;
+  color: #282a2d;
 }
 
 h1, h2, h3, h4, h5, h6, p {
@@ -53,10 +54,10 @@ p ~ h3, ul ~ h3 {
 }
 
 p > a {
-  border-bottom: solid 3px $color-light-blue;
+  border-bottom: solid 3px $color-1;
   transition: border-bottom 0.2s ease;
   &:hover {
-    border-bottom: solid 3px darken($color-dark-blue, 15%);
+    border-bottom: solid 3px darken($color-1, 15%);
   }
 }
 

@@ -1,5 +1,3 @@
-$color-background: $color-black;
-$color-eye: $color-white;
 $nav-height: 80px;
 $nav-width: 270px;
 $nav-padding-desktop: 32px;
@@ -24,7 +22,7 @@ $nav-padding-mobile: 24px;
 }
 
 .c-nav__menu {
-  background: $color-salmon;
+  background: $color-black;
   z-index:900;
   display: flex;
   align-items: center;
@@ -62,19 +60,19 @@ $nav-padding-mobile: 24px;
     height: 2px;
     top: 50%;
     margin-top: -0.5px;
-    background: $color-light-blue;
+    background: $color-2;
   }
   &:before {
     left: -2.5px;
   }
   &:after {
     right: 2.5px;
-    background: $color-light-blue;
+    background: $color-2;
     transition: width 0.8s cubic-bezier(0.22, 0.61, 0.36, 1);
   }
   &:hover {
     &:before {
-      background: $color-light-blue;
+      background: $color-2;
       width: 100%;
       transition: width 0.5s cubic-bezier(0.22, 0.61, 0.36, 1);
     }
@@ -134,7 +132,7 @@ $nav-padding-mobile: 24px;
     left: -8px;
     right: -8px;
     bottom: 8px;
-    background: $color-salmon;
+    background: $color-black;
     -webkit-border-radius: 50%;
     -moz-border-radius: 50%;
     border-radius: 3px;
