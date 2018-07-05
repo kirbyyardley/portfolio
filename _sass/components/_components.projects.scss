@@ -36,13 +36,13 @@
   &:before {
     z-index: 1;
     width: 100vw;
-    background-color: $color-1;
+    background-color: #e3e8eb;
 
   }
   &:after {
     z-index: 2;
     width: 0;
-    background-color: #e3e8eb;
+    background-color: $color-1;
   }
   &:before, &:after {
     content: '';
