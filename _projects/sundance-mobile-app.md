@@ -3,7 +3,7 @@ layout: page
 type: project
 heading: "Project"
 title:  "Mobile App for Sundance Film Festival"
-summary: "The Sundance Film Festival mobile app is an essential part of the on-the-ground experience of the festival."
+summary: "The mobile app is an essential part of the festival experience."
 image: app-preview.png
 date:   2018-05-20
 categories: 'design'
@@ -17,7 +17,7 @@ cta: 'View Project'
   <div class="o-layout o-layout--center o-spacer__top--huge">
     <div class="o-layout__item u-2/3@desktop">
       <h3>2018 Sundance Film Festival Mobile App</h3>
-      <p>The Sundance Film Festival mobile app is an essential part of the on-the-ground experience of the festival. </p>
+      <p>The mobile app is an essential part of the on-the-ground experience of the festival. </p>
     </div>
     <div class="o-layout__item u-2/3@desktop o-spacer__bottom--large">
       <p><em>Role: Research, Prototyping, UI Design</em></p>

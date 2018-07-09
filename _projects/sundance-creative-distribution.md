@@ -2,8 +2,8 @@
 layout: page
 type: project
 heading: "Case Study"
-title:  "Design Patterns for Sundance Institute"
-summary: "Designing consistent, dynamic patterns for written and photographic content and data visualization."
+title:  "Sundance Institute Creative Distribution"
+summary: "Design patterns for content and data visualization."
 image: case-study-preview.png
 date:   2018-05-10
 categories: 'design'
