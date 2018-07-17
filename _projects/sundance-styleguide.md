@@ -30,7 +30,7 @@ cta: 'Read Case Study'
 
       <h4 id="design">I. Sketch Overhaul (Design Debt)</h4>
 
-      <p><a href="https://blog.sketchapp.com/an-iconic-new-look-and-more-4191df5ce8d7" target="_blank">Sketch 41</a> introduced nested symbol overrides, making it one of the single greatest Sketch updates to date. Designers could now create an entire microcosm of symbols by nesting symbols inside of symbols inside of more symbols. After Sketch 41 was released I soon realized that I was going to have revamped all my Sketch files. Thankfully there are brilliant people in this world who are always paving the way.</p>
+      <p><a href="https://blog.sketchapp.com/an-iconic-new-look-and-more-4191df5ce8d7" target="_blank">Sketch 41</a> introduced nested symbol overrides, making it one of the single greatest Sketch updates to date. Designers could now create an entire microcosm of symbols by nesting symbols inside of symbols inside of more symbols. After Sketch 41 was released I soon realized that I was going to have to revamp all my Sketch files. Thankfully there are brilliant people in this world who are always paving the way.</p>
 
       <p><a target="_blank" href="https://medium.com/ux-power-tools/this-is-without-a-doubt-the-coolest-sketch-technique-youll-see-all-day-ddefa65ea959#.pevfkykqk">Jon Moore</a> and <a target="_blank" href="https://medium.com/@lloyd/sketch-symbols-best-practices-now-that-nested-overrides-are-a-thing-9b651d3fe1a4#.3jsbforui">Lloyd Humphries</a>, do a fantastic job of highlighting how best to approach utilizing deeply nested symbols in building components within Sketch.</p>
 
