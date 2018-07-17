@@ -88,7 +88,7 @@ cta: 'Read Case Study'
 
       <p>One unintended consequence of executing the refactor in abstraction, on a Jekyll instance, was that we could now publish it to Github pages as a <a target="_blank" rel="nofollow" href="https://sundance-org.github.io/styles/cards/">living style guide</a>. This has become an invaluable resource for our dev team and for external vendors to reference. </p>
 
-      <h4>The Results</h4>  A
+      <h4>The Results</h4>
       <p>
         Pre-refactor CSS:1025kb at 27,477 lines<br>
         Post-refactor CSS: 300kb at 8,000 lines<br>
