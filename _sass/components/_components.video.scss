@@ -26,7 +26,11 @@
   left: -1px;
   background: $color-black;
   opacity: .6;
+  transition: opacity .2s ease;
   transform:translate3d(0, 0, 1px)!important;
+  .c-video__project:hover &, .c-video__project:focus & {
+    opacity: .25;
+  }
 }
 
 .c-video__inner {
@@ -94,6 +98,7 @@
     margin-bottom: 8px;
   }
   .c-video__project:hover &, .c-video__project:focus & {
-    opacity: .15;
+    opacity: .25;
+
   }
 }
