@@ -8,7 +8,7 @@ image: history-thumb.png
 date:   2018-04-07 11:26:56 -0700
 categories: design
 ---
-<div class="c-page">
+<div class="o-wrapper">
   <div class="o-layout o-layout--center">
     <div class="o-layout__item u-2/3@desktop">
       <h2>Case Study: Sundance.org Digital Archive</h2>
