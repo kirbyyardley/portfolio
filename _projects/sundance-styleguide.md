@@ -14,7 +14,7 @@ cta: 'Read Case Study'
 <div class="o-wrapper">
   <div class="o-layout o-layout--center o-spacer__top--huge">
     <div class="o-layout__item u-2/3@desktop">
-      <h3>Case Study: Sundance.org Style Guide and CSS Refactoring</h3>
+      <h3>Case Study: Sundance.org Design System and CSS Refactor</h3>
       <p>This project involved a complete overhaul of Sketch documents, a CSS refactor, and the creation of a formal design system for Sundance.org.</p>
     </div>
     <div class="o-layout__item u-2/3@desktop o-spacer__bottom">

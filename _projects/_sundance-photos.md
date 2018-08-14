@@ -6,7 +6,7 @@ title:  "Photo Gallery for Sundance Institute"
 summary: "Making decades of archival photographic content accessible, fun, and engaging."
 image: photo-preview.png
 date:   2018-05-1
-categories: 'design'
+categories: ''
 code: 'photo'
 cta: 'View Project'
 ---

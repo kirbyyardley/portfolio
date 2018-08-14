@@ -14,14 +14,13 @@ layout: default
         </div>
       </div>
       <div class="o-layout__item o-spacer__bottom--large">
-        <a class="c-hero-button" href="#design">Design Projects</a>
-        <a class="c-hero-button c-hero-button--white" href="#creative">Creative Projects</a>
+        <a class="c-hero-button" href="#design">View Work</a>
       </div>
     </div>
   </div>
 </div>
 
-<div class="" id="design">
+<div class="o-spacer__top--large o-spacer__bottom--large" id="design">
   <ul class="o-list-bare c-project__container">
 
   {% assign features = site.projects | where: "categories", "design" %}
@@ -50,71 +49,21 @@ layout: default
 </div>
 
 
-<div id="creative" class="o-height--twothirds o-center--vertical c-background--2">
+<div id="about" class="o-height--twothirds o-center--vertical c-background--2">
   <div class="o-wrapper">
     <div class="o-layout">
       <div class="o-layout__item u-3/4@desktop u-3/4@tablet">
-        <h3>Psychology, Philosophy, Literature, and Film</h3>
-        <p>The most exciting and important aspects of my work are the users that I am designing for. I take great interest in subjects like psychology and philosophy because they enable me to form a deeper understanding of the fundamental motivations that people have, and how those people determine their values. My hope is that this deeper understanding will give me a greater sense of how to appropriately use technology to enhance people's lives.</p>
+        <h3>About Me</h3>
+        <p>I’m a designer based in Salt Lake City, Utah. I focus primarily on user experience and interface design, but I also have a lot of experience writing front-end code.</p>
 
-        <p>I also devote much of my time engaging with literature and film, which I believe offer additional windows into the human psyche. You can find some of my creative and analytical work on <a target="_blank" href="https://www.youtube.com/channel/UCJHUnUBHETnsTj4uFghY2kA">Youtube</a> and <a target="_blank" href="https://medium.com/@kirbyyardley">Medium</a>.</p>
+        <p>Depending on the time of year you might find me hiking or skiing in one of Utah’s beautiful mountain ranges, or exploring the deserts in Southern Utah.</p>
 
-      </div>
-    </div>
-  </div>
-</div>
-
-<div style="background: #000000;" class="o-center--vertical c-video__container">
-  <div class="c-video__inner">
-
-    {% assign features = site.projects | where: "categories", "video" %}
-    {% for page in features limit:3 %}
-      <div class="o-height--twothirds c-{{ page.categories }}__project c-project--{{ page.code }}" data-tags="{{ page.categories }}">
-
-        <div class="c-video__overlay"></div>
-        <video preload="none" muted loop playsinline class="lazyload c-video__video" data-poster="{{ site.baseurl }}/assets/img/{{ page.videopreview }}">
-          <source src="{{ site.baseurl }}/assets/img/{{ page.videofile }}" type="video/mp4">
-          <!-- <source src="{{ site.baseurl }}/assets/img/sample3.mp4" type="video/webm; codecs=vp8, vorbis"> -->
-        </video>
-        <a href="{{ page.url }}">
-          <div class="c-video__label-container">
-            <div class="c-video__label">
-              <span>{{ page.summary }}</span>
-              <h3>{{ page.title }}</h3>
-            </div>
-          </div>
-        </a>
+        <p>A lot of my free time is devoted to reading, writing, and creatively expressing ideas. I occasionally post my writings on <a target="_blank" href="https://medium.com/@kirbyyardley">Medium</a>, and I have a <a target="_blank" href="https://www.youtube.com/channel/UCJHUnUBHETnsTj4uFghY2kA">Youtube channel</a> where I post essays about psychology, art, and film.</p>
 
       </div>
-    {% endfor %}
 
-  </div>
-</div>
-
-<div id="writing" class="o-wrapper o-spacer__top--huge o-spacer__bottom--huge">
-  <div class="o-layout">
-    <div class="o-layout__item">
-      <div class="c-project__container">
-
-        {% assign features = site.projects | where: "categories", "writing" %}
-        {% for page in features reversed limit:3 %}
-          <div class="c-project c-project--{{ page.categories }} c-project--{{ page.code }}" data-tags="{{ page.categories }}">
-            <a target="_blank" href="{{ page.href }}">
-              <div class="c-project__inner">
-                <!-- <div class="c-project__image">
-                  <img class="lazyload" data-src="{{ site.baseurl }}/assets/img/{{ page.image }}" alt="">
-                </div> -->
-                <div class="c-project__label">
-                  <span>{{ page.summary }}</span>
-                  <h4>{{ page.title }}</h4>
-                  <p>{{ page.intro }}</p>
-                  <a class="c-hero-button" target="_blank" href="{{ page.href }}">{{ page.cta }}</a>
-                </div>
-              </div>
-            </a>
-          </div>
-        {% endfor %}
-
+      <div class="o-layout__item o-spacer__bottom--large">
+        <a class="c-hero-button c-hero-button--white" href="/contact">Get in Touch</a>
       </div>
     </div>
   </div>

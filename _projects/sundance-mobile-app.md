@@ -2,7 +2,7 @@
 layout: page
 type: project
 heading: "Project"
-title:  "Mobile App for Sundance Film Festival"
+title:  "2018 Sundance Film Festival Mobile App"
 summary: "The mobile app is an essential part of the festival experience."
 image: app-preview.png
 date:   2018-05-20
