@@ -44,7 +44,7 @@ $inuit-crops: (
     height: 105%;
     width: 105%;
     object-fit: cover;
-    transition: all .2s ease-in-out;
+    transition: height .2s ease-in-out, width .2s ease-in-out;
   }
 
   img.o-crop__content {
