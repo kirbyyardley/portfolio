@@ -2,7 +2,7 @@
 layout: page
 type: project
 heading: "Project"
-title:  "Photo Gallery for Sundance Institute"
+title:  "Sundance.org Photo Gallery"
 summary: "Making decades of archival photographic content accessible, fun, and engaging."
 image: photo-preview.jpg
 date:   2018-05-1
