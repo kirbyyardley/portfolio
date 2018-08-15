@@ -20,27 +20,28 @@ layout: default
   </div>
 </div>
 
-<div class="o-spacer__top--large o-spacer__bottom--large" id="design">
+<div class="" id="design">
   <ul class="o-list-bare c-project__container">
 
   {% assign features = site.projects | where: "categories", "design" %}
   {% for page in features reversed %}
     <li class="c-project c-project--{{ page.categories }} c-project--{{ page.code }}" data-tags="{{ page.categories }}">
-      <a href="{{ page.url }}">
 
-        <img class="c-project__image lazyload" src="{{ site.baseurl }}/assets/img/{{ page.image }}" alt="">
-        <div class="c-project__background"></div>
+      <a class="o-crop o-crop--1:1 " href="{{ page.url }}">
+
+
         <div class="c-project__inner">
           <div class="c-project__label">
             <h4>{{ page.title }}</h4>
-            <span>{{ page.summary }}</span>
+            <!-- <span>{{ page.summary }}</span> -->
           </div>
-          <div class="c-project__cta">
+          <!-- <div class="c-project__cta">
             {{ page.cta }}
-          </div>
-
+          </div> -->
         </div>
 
+        <div class="c-overlay"></div>
+        <img class="c-project__image o-crop__content lazyload" src="{{ site.baseurl }}/assets/img/{{ page.image }}" alt="">
       </a>
     </li>
   {% endfor %}
@@ -51,8 +52,8 @@ layout: default
 
 <div id="about" class="o-height--twothirds o-center--vertical c-background--2">
   <div class="o-wrapper">
-    <div class="o-layout">
-      <div class="o-layout__item u-3/4@desktop u-3/4@tablet">
+    <div class="o-layout o-layout--center">
+      <div class="o-layout__item u-2/3@desktop u-2/3@tablet">
         <h3>About Me</h3>
         <p>I’m a designer based in Salt Lake City, Utah. I focus primarily on user experience and interface design, but I also have a lot of experience writing front-end code.</p>
 
@@ -62,7 +63,7 @@ layout: default
 
       </div>
 
-      <div class="o-layout__item o-spacer__bottom--large">
+      <div class="o-layout__item u-2/3@desktop u-2/3@tablet o-spacer__bottom--large">
         <a class="c-hero-button c-hero-button--white" href="/contact">Get in Touch</a>
       </div>
     </div>

@@ -38,11 +38,13 @@ $inuit-crops: (
 
   .o-crop__content {
     position: absolute;
-    top: 0;
-    left: 0;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
     height: 105%;
     width: 105%;
     object-fit: cover;
+    transition: all .2s ease-in-out;
   }
 
   img.o-crop__content {

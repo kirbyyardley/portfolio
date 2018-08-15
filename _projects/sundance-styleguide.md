@@ -2,16 +2,16 @@
 layout: page
 type: project
 heading: "Case Study"
-title:  "Sundance.org Design System and Refactor"
+title:  "Sundance.org Design System and Refactor Case Study"
 summary: "A new design system, a Sketch overhaul, and some CSS refactoring."
-image: styleguide-preview.png
-date:   2018-05-30
+image: styleguidepreview.png
+date:   2018-07-30
 categories: design
 code: 'styleguide'
 cta: 'Read Case Study'
 ---
 
-<div class="o-wrapper">
+<div class="o-wrapper o-spacer__bottom--huge">
   <div class="o-layout o-layout--center o-spacer__top--huge">
     <div class="o-layout__item u-2/3@desktop">
       <h3>Case Study: Sundance.org Design System and CSS Refactor</h3>

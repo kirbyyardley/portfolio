@@ -4,9 +4,9 @@ type: project
 heading: "Project"
 title:  "Sundance.org Photo Gallery"
 summary: "A tool to make decades of filmmaking history accessible and fun."
-image: photo-preview.png
+image: photo-preview.jpg
 date:   2018-05-1
-categories: ''
+categories: 'design'
 code: 'photo'
 cta: 'View Project'
 ---
@@ -22,7 +22,9 @@ cta: 'View Project'
 
       <h4>Framing the Problem</h4>
 
-      <p>In 2014 Sundance.org was rebuilt from the ground up. Much of the site's content was migrated into a new content management system, however, photo galleries were not part of that migration. Photography is a necessary component of marketing's overall content plan, as well as Sundance's primary means of visually representing an institutional history that spans nearly four decades. Our goal was to create a photo viewing experience that was engaging, informative, and adopted modern design standards. </p>
+      <p>In 2014 Sundance.org was rebuilt from the ground up. Much of the site's content was migrated into a new content management system, however, photo galleries were not part of that initial migration.</p>
+      
+      <p>Photography is a necessary component of marketing's overall content plan, as well as Sundance's primary means of visually representing an institutional history that spans nearly four decades. Our goal was to create a photo viewing experience that was engaging, informative, and adopted modern design standards. </p>
 
       <p><strong>The Big Challenges:</strong></p>
       <ul class="">

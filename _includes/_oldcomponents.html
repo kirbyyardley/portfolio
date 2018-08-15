@@ -1,3 +1,31 @@
+<div class="o-spacer__top--large o-spacer__bottom--large" id="design">
+  <ul class="o-list-bare c-project__container">
+
+  {% assign features = site.projects | where: "categories", "design" %}
+  {% for page in features reversed %}
+    <li class="c-project c-project--{{ page.categories }} c-project--{{ page.code }}" data-tags="{{ page.categories }}">
+      <a href="{{ page.url }}">
+
+        <img class="c-project__image lazyload" src="{{ site.baseurl }}/assets/img/{{ page.image }}" alt="">
+        <div class="c-project__background"></div>
+        <div class="c-project__inner">
+          <div class="c-project__label">
+            <h4>{{ page.title }}</h4>
+            <span>{{ page.summary }}</span>
+          </div>
+          <div class="c-project__cta">
+            {{ page.cta }}
+          </div>
+
+        </div>
+
+      </a>
+    </li>
+  {% endfor %}
+
+  </ul>
+</div>
+
 <div id="creative" class="o-height--twothirds o-center--vertical c-background--2">
   <div class="o-wrapper">
     <div class="o-layout">

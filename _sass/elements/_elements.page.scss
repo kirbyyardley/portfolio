@@ -19,7 +19,7 @@ html {
   line-height: $inuit-global-line-height / $inuit-global-font-size; /* [1] */
   overflow-y: scroll; /* [2] */
   min-height: 100%; /* [3] */
-  background: #e3e8eb;
+  // background: #e3e8eb;
 }
 
 html, body {
@@ -89,7 +89,7 @@ select {
 input,
 select,
 textarea {
-  border: solid 2px lighten($color-black, 85%);
+  border: solid 2px $color-gray;
   border-radius: 2px;
 }
 

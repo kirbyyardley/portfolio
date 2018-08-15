@@ -4,14 +4,14 @@ type: project
 heading: "Project"
 title:  "Photo Gallery for Sundance Institute"
 summary: "Making decades of archival photographic content accessible, fun, and engaging."
-image: photo-preview.png
+image: photo-preview.jpg
 date:   2018-05-1
-categories: ''
+categories: 'design'
 code: 'photo'
 cta: 'View Project'
 ---
 
-<div class="o-wrapper">
+<div class="o-wrapper o-spacer__bottom--huge">
   <div class="o-layout o-layout--center o-spacer__top--huge">
     <div class="o-layout__item u-2/3@desktop">
       <h3>Sundance.org Photo Gallery</h3>
@@ -23,27 +23,15 @@ cta: 'View Project'
     </div>
 
     <div class="o-layout__item u-1/1@desktop u-1/1@tablet o-spacer__bottom">
-      <div class="c-images c-images--padded u-1/2">
-        <img data-action="zoom" src="{{ "assets/img/gallery-0.jpg" | relative_url }}">
-      </div>
-      <div class="c-images c-images--padded u-1/2">
-        <img data-action="zoom" src="{{ "assets/img/gallery-1.jpg" | relative_url }}">
-      </div>
+        <img data-action="zoom" src="{{ "assets/img/gallery-00.jpg" | relative_url }}">
     </div>
 
-    <div class="o-layout__item u-1/1@desktop u-1/1@tablet">
-      <div class="c-images c-images--padded u-1/4">
-        <img data-action="zoom" src="{{ "assets/img/gallery-4.jpg" | relative_url }}">
-      </div>
-      <div class="c-images c-images--padded u-1/4">
-        <img data-action="zoom" src="{{ "assets/img/gallery-3.jpg" | relative_url }}">
-      </div>
-      <div class="c-images c-images--padded u-1/4">
-        <img data-action="zoom" src="{{ "assets/img/gallery-2.jpg" | relative_url }}">
-      </div>
-      <div class="c-images c-images--padded u-1/4">
-        <img data-action="zoom" src="{{ "assets/img/gallery-5.jpg" | relative_url }}">
-      </div>
+    <div class="o-layout__item u-1/1@desktop u-1/1@tablet o-spacer__bottom">
+        <img data-action="zoom" src="{{ "assets/img/gallery-01.jpg" | relative_url }}">
+    </div>
+
+    <div class="o-layout__item u-1/1@desktop u-1/1@tablet o-spacer__bottom">
+        <img data-action="zoom" src="{{ "assets/img/gallery-02.jpg" | relative_url }}">
     </div>
 
   </div>
