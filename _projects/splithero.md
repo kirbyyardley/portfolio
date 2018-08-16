@@ -5,7 +5,7 @@ heading: "Case Study"
 title:  "SplitHero: A UX Case Study"
 summary: "The app that allows users to easily split up their dinner bill."
 image: CheckSplitPreview.png
-date:   2018-08-13
+date:   2018-08-12
 categories: design
 code: 'splithero'
 cta: 'Read Case Study'
