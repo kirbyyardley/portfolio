@@ -86,7 +86,7 @@ cta: 'Read Case Study'
 
       <p>Making sweeping changes to a website's codebase is full of risks. Coordinating work between teams and team members becomes very tricky when you have to deal with the fact that projects are constantly in motion. We wanted to do everything we could to avoid this nightmare so I opted to build each of the patterns in abstraction, outside the codebase and out of pace with the other projects that were progressing. Using Jekyll with InuitCSS installed, I built every component to spec before moving the new CSS into the actual codebase. The migration process only took several weeks, which minimized the amount of time that we spent living between two vastly different CSS libraries. </p>
 
-      <p>One unintended consequence of executing the refactor in abstraction, on a Jekyll instance, was that we could now publish it to Github pages as a <a target="_blank" rel="nofollow" href="https://sundance-org.github.io/styles/cards/">living style guide</a>. This has become an invaluable resource for our dev team and for external vendors to reference. </p>
+      <p>One unintended consequence of executing the refactor in abstraction on a Jekyll instance was that we could now publish it to Github pages as a <a target="_blank" rel="nofollow" href="https://sundance-org.github.io/styles/cards/">living style guide</a>. This has become an invaluable resource for our dev team and for external vendors to reference. </p>
 
       <h4>The Results</h4>
       <p>
