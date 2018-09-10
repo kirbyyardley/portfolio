@@ -54,7 +54,7 @@ cta: 'Read Case Study'
 
     <div class="o-layout__item u-2/3@desktop o-spacer__bottom">
 
-      <p>Nearly every design component used on any given screen was constructed using symbols using content overrides. This meant that near-perfect consistency would be maintained across the entire document.</p>
+      <p>Nearly every design component used on any given screen was constructed using symbols with content overrides. This meant that near-perfect consistency would be maintained across the entire document.</p>
 
       <p>Going through this process also forced me to address a lot of other issues that were present in my initial designs. For example, Sundance.org lacked a true baseline grid, which gave the site a perceptibly poor vertical rhythm. I took advantage of this opportunity to spent almost an entire day recalculating every space and line-height throughout the entire site. It's astonishing how subtle that change was and how much of an impact it had on every single page. With these tweaks out of the way, our team would now need to strategize on how to go about implementing a complete refactoring of the site's CSS.</p>
 
