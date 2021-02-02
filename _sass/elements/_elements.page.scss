@@ -78,7 +78,7 @@ button {
   border-image: none;
 }
 
-input::placeholder {
+input::placeholder, textarea::placeholder {
   color: #999;
 }
 
